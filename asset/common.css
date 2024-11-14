@@ -40,7 +40,7 @@
 h1{
 	font-family: var(--font-family-1);
 	font-weight: var(--font-weight-bold);
-	font-size: var(--size-7);
+	font-size: var(--size-4);
 	color: var(--black);
 	color: var(--dark-yellow);
 }
@@ -53,26 +53,41 @@ section:nth-child(4) h1 {
 	color: var(--dark-teal)
 }
 
+p{
+	font-family: var(--font-family-1);
+	color: var(--black);
+}
+
+blockquote{
+	font-family: var(--font-family-1);
+	font-size: var(--size-2);
+	font-style: italic;
+	margin-bottom: var(--size-1);
+}
+
+/* Grid Settings */
+
 body{
-	font-size: var(--size-1);
+	font-size: calc(var(--size-1)*1.1);
 	background-color: var(--dark-beige);
 	margin: var(--size-2);
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 1fr;
 	gap: var(--size-1);
 }
 
-p{
+cite{
 	font-family: var(--font-family-1);
-	max-width: 65ch;
 	color: var(--black);
 }
 
 section{
-	padding: var(--size-4);
+	padding: var(--size-2);
 	text-align: center;
 	border-radius: var(--size-3);
 }
+
+/* Grid Styles */
 
 .header-1{
 	border: 2px solid var(--dark-yellow);
@@ -92,15 +107,9 @@ section{
 	text-align: center;
 }
 
-.paragraph{
+.basic{
 	background-color: var(--light-beige);
 	text-align: left;
-}
-
-blockquote{
-	font-family: var(--font-family-1);
-	font-size: var(--size-2);
-	font-style: italic;
 }
 
 #quote{
@@ -109,6 +118,8 @@ blockquote{
 	font-weight: 500;
 
 }
+
+/* Nav Settings */
 
 #nav ul {
 	display: flex;
@@ -124,20 +135,39 @@ blockquote{
 	margin-left: 20px;
 }
 
-
-
 	/* Media Queries */
 
-@media (min-width: 1088px) {
+@media (min-width: 1080px) {
 
 	body {
 		display: grid;
-		grid-template-columns: auto auto auto;
-		gap: var(--size-1);
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--size-3);
+		margin: var(--size-4);
+	}
+
+	section:nth-child(5),:nth-child(8){
+		grid-column: span 2;
+	}
+
+	section{
+		padding: var(--size-4);
+	}
+
+	h1{
+		font-size: var(--size-9);
 	}
 
 	#nav {
 		grid-column: span 3;
 	}
 }
+
+@media (min-width: 768px) {
+
+	h1{
+		font-size: var(--size-7);
+	}
+
+	}
 
