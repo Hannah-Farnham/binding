@@ -24,6 +24,14 @@
 	/* Color */
 
 	--dark-red: #BB3914;
+	--light-red: #FE6539;
+	--dark-yellow: #D1A228;
+	--light-yellow: #FACF49;
+	--dark-teal: #5B8B85;
+	--light-teal: #75A7A9;
+	--light-beige: #F4ECDA;
+	--dark-beige: #EDE4CE;
+	--black: #262426;
 }
 
 * {margin: .5em;}
@@ -33,7 +41,8 @@
 h1{
 	font-family: var(--font-family);
 	font-weight: var(--font-weight-bold);
-	font-size: var(--size-8);
+	font-size: var(--size-7);
+	color: var(--black);
 }
 
 h1:nth-child(2) {
@@ -42,20 +51,50 @@ h1:nth-child(2) {
 
 body{
 	font-size: var(--size-1);
+	background-color: var(--dark-beige);
 }
 
 p{
 	font-family: var(--font-family);
 	max-width: 65ch;
+	color: var(--black);
+}
+
+section{
+	padding: var(--size-2);
+	text-align: center;
+	border-radius: var(--size-3);
+}
+
+.header-1{
+	border: 2px solid var(--dark-yellow);
+	background-color: var(--light-yellow);
+	text-align: center;
+}
+
+.header-2{
+	border: 2px solid var(--dark-red);
+	background-color: var(--light-red);
+	text-align: center;
+}
+
+.header-3{
+	border: 2px solid var(--dark-teal);
+	background-color: var(--light-teal);
+	text-align: center;
+}
+
+.paragraph{
+	background-color: var(--light-beige);
 }
 
 	/* Media Queries */
 
-@media (min-width: 728px) {
+@media (min-width: 1088px) {
 
-	header {
+	body {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: auto auto auto;
 	}
 }
 
