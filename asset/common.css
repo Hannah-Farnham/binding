@@ -17,9 +17,11 @@
 
 	/* Font */
 
-	--font-family: "aktiv-grotesk", sans-serif;
+	--font-family-1: "aktiv-grotesk", sans-serif;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
+	--font-family-2: "itc-american-typewriter", serif;
+	--font-family-3: "nitti-typewriter-cameo", sans-serif;
 
 	/* Color */
 
@@ -33,35 +35,41 @@
 	--dark-beige: #EDE4CE;
 	--black: #262426;
 }
-
-* {margin: .5em;}
-
 	/* Font Settings */
 
 h1{
-	font-family: var(--font-family);
+	font-family: var(--font-family-1);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--size-7);
 	color: var(--black);
+	color: var(--dark-yellow);
 }
 
-h1:nth-child(2) {
-	color: var(--dark-red);
+section:nth-child(3) h1 {
+	color: var(--dark-red)
+}
+
+section:nth-child(4) h1 {
+	color: var(--dark-teal)
 }
 
 body{
 	font-size: var(--size-1);
 	background-color: var(--dark-beige);
+	margin: var(--size-2);
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: var(--size-1);
 }
 
 p{
-	font-family: var(--font-family);
+	font-family: var(--font-family-1);
 	max-width: 65ch;
 	color: var(--black);
 }
 
 section{
-	padding: var(--size-2);
+	padding: var(--size-4);
 	text-align: center;
 	border-radius: var(--size-3);
 }
@@ -86,7 +94,37 @@ section{
 
 .paragraph{
 	background-color: var(--light-beige);
+	text-align: left;
 }
+
+blockquote{
+	font-family: var(--font-family-1);
+	font-size: var(--size-2);
+	font-style: italic;
+}
+
+#quote{
+	font-family: var(--font-family-2);
+	font-size: var(--size-6);
+	font-weight: 500;
+
+}
+
+#nav ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: var(--font-family-1);
+	color: var(--black);
+  }
+  
+#nav li {
+	margin-left: 20px;
+}
+
+
 
 	/* Media Queries */
 
@@ -95,6 +133,11 @@ section{
 	body {
 		display: grid;
 		grid-template-columns: auto auto auto;
+		gap: var(--size-1);
+	}
+
+	#nav {
+		grid-column: span 3;
 	}
 }
 
