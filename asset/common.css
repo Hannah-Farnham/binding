@@ -1,13 +1,61 @@
+
+/* Variables */
+
 :root {
-	--base-size: 20px;
+
+/* Sizes */
+
+	--size-1: 16px;
+	--size-2: 24px;
+	--size-3: 32px;
+	--size-4: 48px;
+	--size-5: 64px;
+	--size-6: 80px;
+	--size-7: 96px;
+	--size-8: 112px;
+	--size-9: 144px;
+
+	/* Font */
+
+	--font-family: "aktiv-grotesk", sans-serif;
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+
+	/* Color */
+
+	--dark-red: #BB3914;
 }
+
+* {margin: .5em;}
+
+	/* Font Settings */
 
 h1{
-	color: tomato;
+	font-family: var(--font-family);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--size-8);
 }
 
-* {margin-top: 1em;}
+h1:nth-child(2) {
+	color: var(--dark-red);
+}
 
 body{
-	font-size: 20px;
+	font-size: var(--size-1);
 }
+
+p{
+	font-family: var(--font-family);
+	max-width: 65ch;
+}
+
+	/* Media Queries */
+
+@media (min-width: 728px) {
+
+	header {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
