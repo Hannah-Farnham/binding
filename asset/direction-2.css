@@ -91,6 +91,21 @@
 		background-color: var(--light-beige);
 		text-align: left;
 	}
+
+	.basic:nth-child(7){
+		background-color: var(--light-teal);
+		border: 2px solid var(--dark-teal);
+	}
+
+	.basic:nth-child(10){
+		background-color: var(--light-red);
+		border: 2px solid var(--dark-red);
+	}
+
+	.basic:nth-child(12){
+		background-color: var(--light-yellow);
+		border: 2px solid var(--dark-yellow);
+	}
 	
 	#quote{
 		font-family: var(--font-family-2);
