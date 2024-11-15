@@ -24,7 +24,7 @@
 	
 	/* Color */
 	
-	--dark-beige: #799772;
+	--dark-beige: #ac9b15;
 	--black: #171717;
 }
 
@@ -86,7 +86,21 @@ cite{
 section{
 	border-radius: 0px;
 }
+
+.basic:nth-child(6), :nth-child(10),:nth-child(14){
+	border-right: 2px var(--black) dashed;	
+	padding: var(--size-4);
+	justify-content: center;
+	align-items: center;
+}
 	
+.basic:nth-child(9){
+	border-left: 2px var(--black) dashed;	
+	padding: var(--size-4);
+	justify-content: center;
+	align-items: center;
+}
+
 #quote{
 	font-family: var(--font-family-2);
 	font-size: var(--size-6);
