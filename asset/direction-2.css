@@ -118,11 +118,6 @@
 	/* Nav Settings */
 	
 	#nav ul {
-		display: flex;
-		justify-content: flex-end;
-		padding: 0;
-		margin: 0;
-		list-style: none;
 		font-family: var(--font-family-1);
 		color: var(--black);
 	  }
@@ -131,39 +126,13 @@
 		margin-left: 20px;
 	}
 	
-		/* Media Queries */
+	/* Media Queries */
+
+@media (min-width: 1080px) {
 	
-@media (min-width: 728px) {
-
-		h1{
-			font-size: var(--size-8);
-		}
-
+	
+	h1{
+		font-size: var(--size-10);
 	}
-
-	@media (min-width: 1080px) {
-	
-		body {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: var(--size-3);
-			margin: var(--size-4);
-		}
-	
-		section:nth-child(5),:nth-child(8){
-			grid-column: span 2;
-		}
-	
-		section{
-			padding: var(--size-4);
-		}
-	
-		h1{
-			font-size: var(--size-10);
-		}
-	
-		#nav {
-			grid-column: span 3;
-		}
-	}
+}
 	

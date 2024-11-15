@@ -35,6 +35,7 @@
 	--dark-beige: #EDE4CE;
 	--black: #262426;
 }
+
 	/* Font Settings */
 
 h1{
@@ -53,6 +54,7 @@ blockquote{
 	font-size: var(--size-2);
 	font-style: italic;
 	margin-bottom: var(--size-1);
+	color: var(--black);
 }
 
 cite{
@@ -69,6 +71,7 @@ body{
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: var(--size-1);
+	max-width: 1920px;
 }
 
 section{
@@ -117,7 +120,8 @@ section{
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--size-3);
-		margin: var(--size-4);
+		margin: 0 auto;
+		padding: var(--size-4);
 	}
 
 	section:nth-child(6),:nth-child(9),:nth-child(14){
@@ -151,5 +155,5 @@ section{
 		font-size: var(--size-7);
 	}
 
-	}
+}
 
