@@ -3,128 +3,129 @@
 
 :root {
 
-	/* Sizes */
+/* Sizes */
 	
-		--size-1: 16px;
-		--size-2: 24px;
-		--size-3: 32px;
-		--size-4: 48px;
-		--size-5: 64px;
-		--size-6: 80px;
-		--size-7: 96px;
-		--size-8: 112px;
-		--size-9: 144px;
-		--size-10: 160px;
+	--size-1: 16px;
+	--size-2: 24px;
+	--size-3: 32px;
+	--size-4: 48px;
+	--size-5: 64px;
+	--size-6: 80px;
+	--size-7: 96px;
+	--size-8: 112px;
+	--size-9: 144px;
+	--size-10: 160px;
 	
-		/* Font */
+	/* Font */
 	
-		--font-family-1: "aktiv-grotesk", sans-serif;
-		--font-weight-regular: 400;
-		--font-weight-bold: 700;
-		--font-family-2: "itc-american-typewriter", serif;
-		--font-family-3: "nitti-typewriter-cameo", sans-serif;
+	--font-family-1: "aktiv-grotesk", sans-serif;
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+	--font-family-2: "itc-american-typewriter", serif;
+	--font-family-3: "nitti-typewriter-cameo", sans-serif;
 	
-		/* Color */
+	/* Color */
 	
-		--dark-red: #BB3914;
-		--light-red: #FE6539;
-		--dark-yellow: #D1A228;
-		--light-yellow: #FACF49;
-		--dark-teal: #5B8B85;
-		--light-teal: #75A7A9;
-		--light-beige: #F4ECDA;
-		--dark-beige: #EDE4CE;
-		--black: #262426;
-	}
-		/* Font Settings */
-	
-	h1{
-		color: var(--black);
-		color: var(--dark-yellow);
-	}
-	
-	section:nth-child(3) h1 {
-		color: var(--dark-red)
-	}
-	
-	section:nth-child(4) h1 {
-		color: var(--dark-teal)
-	}
-	
-	p{
-		font-family: var(--font-family-1);
-		color: var(--black);
-	}
-	
-	blockquote{
-		font-family: var(--font-family-1);
-		font-size: var(--size-2);
-		font-style: italic;
-		margin-bottom: var(--size-1);
-	}
+	--dark-red: #BB3914;
+	--light-red: #FE6539;
+	--dark-yellow: #D1A228;
+	--light-yellow: #FACF49;
+	--dark-teal: #5B8B85;
+	--light-teal: #75A7A9;
+	--light-beige: #F4ECDA;
+	--dark-beige: #EDE4CE;
+	--black: #262426;
+}
 
-	cite{
-		font-family: var(--font-family-1);
-		color: var(--black);
-	}	
+	/* Font Settings */
+	
+h1{
+	color: var(--black);
+	color: var(--dark-yellow);
+}
+	
+section:nth-child(3) h1 {
+	color: var(--dark-red)
+}
+	
+section:nth-child(4) h1 {
+	color: var(--dark-teal)
+}
+	
+p{
+	font-family: var(--font-family-1);
+	color: var(--black);
+}
+
+blockquote{
+	font-family: var(--font-family-1);
+	font-size: var(--size-2);
+	font-style: italic;
+	margin-bottom: var(--size-1);
+}
+
+cite{
+	font-family: var(--font-family-1);
+	color: var(--black);
+}	
 	
 	/* Grid Styles */
 	
-	.header-1{
-		border: 2px solid var(--dark-yellow);
-		background-color: var(--light-yellow);
-		text-align: center;
-	}
+.header-1{
+	border: 2px solid var(--dark-yellow);
+	background-color: var(--light-yellow);
+	text-align: center;
+}
 	
-	.header-2{
-		border: 2px solid var(--dark-red);
-		background-color: var(--light-red);
-		text-align: center;
-	}
+.header-2{
+	border: 2px solid var(--dark-red);
+	background-color: var(--light-red);
+	text-align: center;
+}
 	
-	.header-3{
-		border: 2px solid var(--dark-teal);
-		background-color: var(--light-teal);
-		text-align: center;
-	}
+.header-3{
+	border: 2px solid var(--dark-teal);
+	background-color: var(--light-teal);
+	text-align: center;
+}
 	
-	.basic{
-		background-color: var(--light-beige);
-		text-align: left;
-	}
+.basic{
+	background-color: var(--light-beige);
+	text-align: left;
+}
 
-	.basic:nth-child(7), :nth-child(13){
-		background-color: var(--light-teal);
-		border: 2px solid var(--dark-teal);
-	}
+.basic:nth-child(7), :nth-child(13){
+	background-color: var(--light-teal);
+	border: 2px solid var(--dark-teal);
+}
 
-	.basic:nth-child(11){
-		background-color: var(--light-red);
-		border: 2px solid var(--dark-red);
-	}
+.basic:nth-child(11){
+	background-color: var(--light-red);
+	border: 2px solid var(--dark-red);
+}
 
-	.basic:nth-child(12){
-		background-color: var(--light-yellow);
-		border: 2px solid var(--dark-yellow);
-	}
+.basic:nth-child(12){
+	background-color: var(--light-yellow);
+	border: 2px solid var(--dark-yellow);
+}
 	
-	#quote{
-		font-family: var(--font-family-2);
-		font-size: var(--size-6);
-		font-weight: 500;
+#quote{
+	font-family: var(--font-family-2);
+	font-size: var(--size-6);
+	font-weight: 500;
 	
-	}
+}
 	
 	/* Nav Settings */
 	
-	#nav ul {
-		font-family: var(--font-family-1);
-		color: var(--black);
-	  }
+#nav ul {
+	font-family: var(--font-family-1);
+	color: var(--black);
+}
 	  
-	#nav li {
-		margin-left: 20px;
-	}
+#nav li {
+	margin-left: 20px;
+}
 	
 	/* Media Queries */
 

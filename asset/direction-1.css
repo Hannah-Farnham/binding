@@ -14,13 +14,14 @@
 	--size-7: 96px;
 	--size-8: 112px;
 	--size-9: 144px;
+	--size-10: 160px;
 	
 	/* Font */
 	
-	--font-family-1: "boreal", sans-serif;
+	--font-family-1: "cofo-sans-mono-variable", sans-serif;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
-	--font-family-2: "itc-american-typewriter", serif;
+	--font-family-2: "cofo-sans-mono-variable", sans-serif;
 	--font-family-3: "nitti-typewriter-normal", sans-serif;
 	
 	/* Color */
@@ -39,13 +40,15 @@
 	/* Font Settings */
 	
 h1{
+	font-family: var(--font-family-3);
 	color: var(--black);
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 
 p{
 	font-family: var(--font-family-1);
 	color: var(--black);
+	line-height: var(--size-2);
 }
 	
 blockquote{
@@ -118,9 +121,16 @@ section{
 	/* Nav Settings */
 	
 #nav ul {
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-3);
 	color: var(--black);
 }
+
+/* Info Settings */
+
+#info ul {
+	font-family: var(--font-family-2);
+	color: var(--black);
+  }
 	
 	/* Media Queries */
 
@@ -135,8 +145,9 @@ section{
 @media (min-width: 1080px) {
 	
 	body {	
-		gap: var(--size-3);
-		margin: var(--size-4);
+		gap: var(--size-4);
+		margin: 0 auto;
+		padding: var(--size-5);
 	}
 
 	section{
@@ -144,11 +155,11 @@ section{
 	}
 
 	h1{
-		font-size: var(--size-9);
+		font-size: var(--size-10);
 	}
 
 	.header-1{
-		transform: rotate(20deg);
+		transform: rotate(15deg);
 	}
 		
 	.header-2{
