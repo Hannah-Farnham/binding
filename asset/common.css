@@ -96,6 +96,10 @@ section{
 	margin-left: 20px;
 }
 
+.current-page {
+	background-color: var(--dark-yellow);
+}
+
 /* Info Settings */
 
 #info ul {
