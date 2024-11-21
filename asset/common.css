@@ -130,19 +130,24 @@ nav{
 	position: relative;
 	overflow: hidden;
 }
-  
+
+.square-container{
+	width: var(--size-5);
+	height: var(--size-6);
+}
+
 .square {
 	width: var(--size-4);
 	height: var(--size-4);
-	padding-bottom: var(--size-1);
 }
 
 #square-1 {
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	position: relative;
-	bottom: 80px;
+	top: 16px;
 	left: 16px;
+	z-index: 1;
 }
 
 #square-2 {
@@ -158,6 +163,8 @@ nav{
 	background-color: var(--white);
 	text-align: center;
 	line-height: var(--size-4);
+	position: relative;
+	bottom: 96px;
 	z-index: 3;
 }
 
@@ -166,7 +173,7 @@ nav{
 }
 
 #current-page {
-	background-color: var(--dark-orange);
+	background-color: var(--dark-grey);
 }
 
 /* Info Settings (Below Header) */
