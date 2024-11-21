@@ -23,7 +23,7 @@
 	--font-weight-bold: 700;
 	--font-family-2: "mono45-headline", monospace;
 	--font-family-3: "nitti-typewriter-normal", sans-serif;
-	--font-family-4: "franklin-gothic-atf", sans-serif;
+	--font-family-4: "aktiv-grotesk", sans-serif;
 
 	/* Color */
 
@@ -42,7 +42,7 @@
 	/* Font Settings */
 
 h1{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-3);
 	font-weight: var(--font-weight-bold);
 	color: var(--black);
 	font-size: var(--size-4);
@@ -58,7 +58,7 @@ p{
 
 blockquote{
 	font-family: var(--font-family-1);
-	font-size: calc(var(--size-1))*1.5;
+	font-size: calc(var(--size-))*1.5;
 	text-align: center;
 	font-weight: 500;
 	color: var(--black);
