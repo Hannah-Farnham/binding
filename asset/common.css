@@ -54,7 +54,7 @@ p{
 }
 
 blockquote{
-	font-family: var(--font-family-2);
+	font-family: var(--font-family-1);
 	font-size: var(--size-2);
 	text-align: center;
 	font-weight: 500;
@@ -69,7 +69,7 @@ cite{
 }
 
 #quote{
-	font-family: var(--font-family-2);
+	font-family: var(--font-family-1);
 	font-size: var(--size-6);	
 	font-weight: 200;
 	text-align: center;
@@ -80,6 +80,10 @@ cite{
 body{
 	font-size: calc(var(--size-1)*1.1);
 	max-width: 1920px;
+}
+
+.header-container {
+	padding: var(--size-2);
 }
 
 /* Grid Styles */
@@ -110,7 +114,7 @@ nav{
 	margin: 0;
 	list-style: none;
 	font-family: var(--font-family-2);
-	font-size: var(--size-2);
+	font-size: var(--size-1);
 	color: var(--black);
   }
   
@@ -152,32 +156,43 @@ nav{
 
 	body {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(12, 1fr);
+	}
 
 	article {
-		grid-column: span 3;
+		grid-column: span 10;
+	}
+
+	nav{
+		grid-column: span 2;
 	}
 	
 	article {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		gap: var(--size-4);
+		gap: var(--size-2);
 		margin: 0 auto;
-		padding: var(--size-5);
+		padding: var(--size-1);
 	}
 
 	.basic {
-		grid-column: span 4;
-		padding: var(--size-4);
+		grid-column: span 6;
+		padding: var(--size-3);
 	}
 
 	h1{
-		font-size: var(--size-10);
+		font-size: var(--size-6);
 	}
 
 	#info {
 		grid-column: span 12;
 	}
 
-}
+	.heading{
+		grid-column: span 12;
+		padding:  var(--size-6);
+		display: flex;
+		justify-content: flex-start;
+	}
 
+}
