@@ -49,11 +49,11 @@
 	
 @media (min-width: 1080px) {
 	
-	section:nth-child(6),:nth-child(9),:nth-child(14){
+	/* div:nth-child(6),:nth-child(9),:nth-child(14){
 		grid-column: span 2;
-	}
+	} */
 
-	section:nth-child(8){
+	div:nth-child(8){
 		grid-column: span 1;
 	}
 
