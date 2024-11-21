@@ -30,6 +30,10 @@
 	transform-origin: center;
 }
 
+.basic:nth-child(5):hover{
+	transform: rotate(-15deg);
+}
+
 .basic:nth-child(9){
 	background-color: var(--light-pink);
 	transform: rotate(15deg);

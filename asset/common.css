@@ -33,9 +33,10 @@
 	--light-orange: #F2925C;
 	--dark-blue: #5BA5DF;
 	--light-blue: #9CCFF8;
-	--light-grey: #C3C3C3;
+	--light-grey: #e3e3e3;
 	--dark-grey: #ADADAC;
 	--black: #262426;
+	--white: #fafafa;
 }
 
 	/* Font Settings */
@@ -110,12 +111,12 @@ article{
 /* Nav Settings */
 
 nav{
-	background-color: white;
+	background-color: var(--white);
 	display: flex;
 	justify-content: flex-start;
 }
 
-.nav-items ul {
+.nav-items {
 	padding: var(--size-1);
 	margin: 0;
 	list-style: none;
@@ -123,9 +124,45 @@ nav{
 	font-size: var(--size-1);
 	text-align: center;
 	color: var(--black);
-  }
+	display: grid;
+	grid-template-columns: 1fr;
+	place-items: center;
+	position: relative;
+	overflow: hidden;
+}
   
-.nav-items li {
+.square {
+	width: var(--size-4);
+	height: var(--size-4);
+	padding-bottom: var(--size-1);
+}
+
+#square-1 {
+	border: 1px var(--black) solid;
+	background-color: var(--white);
+	position: relative;
+	bottom: 80px;
+	left: 16px;
+}
+
+#square-2 {
+	background-color: var(--dark-blue);
+	position: relative;
+	bottom: 38px;
+	left: 8px;
+	z-index: 2;
+}
+
+#square-3 {
+	border: 1px var(--black) solid;
+	background-color: var(--white);
+	text-align: center;
+	line-height: var(--size-4);
+	z-index: 3;
+}
+
+#square-text {
+	font-family: "Bodoni Moda", serif;
 }
 
 #current-page {
@@ -165,6 +202,8 @@ nav{
 
 @media (min-width: 1080px) {
 
+	/* Body Grid Setting*/
+
 	body {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
@@ -174,16 +213,30 @@ nav{
 		grid-column: span 10;
 	}
 
+	/* Nav Settings */
+
 	nav{
 		grid-column: span 2;
 	}
+
+	.nav-items {
+		font-size: var(--size-2);
+	}
+
+	/* Info Settings */
+
+	#info {
+		grid-column: span 12;
+	}
+
+	/* Article Grid Styles */
 	
 	article {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		gap: var(--size-2);
 		margin: 0 auto;
-		padding: var(--size-1);
+		padding: var(--size-2);
 	}
 
 	.basic {
@@ -191,16 +244,14 @@ nav{
 		grid-column: span 6;
 	}
 
+	/* Heading Grid Setting*/
+
 	h1{
 		font-size: var(--size-8);
 	}
 
 	.header-container{
 		padding: var(--size-4);
-	}
-
-	#info {
-		grid-column: span 12;
 	}
 
 	.heading{
