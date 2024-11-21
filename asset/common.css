@@ -21,7 +21,7 @@
 	--font-family-1: "cofo-sans-mono-variable", sans-serif;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
-	--font-family-2: "cofo-sans-mono-variable", sans-serif;
+	--font-family-2: "itc-american-typewriter", serif;
 	--font-family-3: "nitti-typewriter-normal", sans-serif;
 
 	/* Color */
@@ -54,10 +54,10 @@ p{
 }
 
 blockquote{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-2);
 	font-size: var(--size-2);
-	font-style: italic;
 	text-align: center;
+	font-weight: 500;
 	color: var(--black);
 	line-height: var(--size-3);
 	padding-top: var(--size-4);
@@ -69,8 +69,9 @@ cite{
 }
 
 #quote{
-	font-family: var(--font-family-3);
-	font-size: var(--size-4);	
+	font-family: var(--font-family-2);
+	font-size: var(--size-6);	
+	font-weight: 200;
 	text-align: center;
 }
 
@@ -78,17 +79,7 @@ cite{
 
 body{
 	font-size: calc(var(--size-1)*1.1);
-	background-color: var(--light-grey);
-	margin: var(--size-2);
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: var(--size-2);
 	max-width: 1920px;
-}
-
-section{
-	padding: var(--size-2);
-	text-align: center;
 }
 
 /* Grid Styles */
@@ -99,23 +90,33 @@ section{
 	border: 1px var(--dark-grey) dashed;
 }
 
+.article{
+	background-color: var(--light-grey);
+	margin: var(--size-2);
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--size-2);
+}
+
 /* Nav Settings */
 
-#nav ul {
-	display: flex;
-	justify-content: flex-end;
-	padding: 0;
+nav{
+	background-color: white;
+}
+
+.nav-items ul {
+	padding: var(--size-1);
 	margin: 0;
 	list-style: none;
 	font-family: var(--font-family-3);
 	color: var(--black);
   }
   
-#nav li {
+.nav-items li {
 	margin-left: 20px;
 }
 
-.current-page {
+#current-page {
 	background-color: var(--dark-orange);
 }
 
@@ -149,7 +150,15 @@ section{
 
 	body {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+
+	.article {
+		grid-column: span 3;
+	}
+	
+	.article {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
 		gap: var(--size-4);
 		margin: 0 auto;
 		padding: var(--size-5);
@@ -163,12 +172,9 @@ section{
 		font-size: var(--size-10);
 	}
 
-	#nav {
-		grid-column: span 3;
-	}
-
 	#info {
 		grid-column: span 3;
 	}
+
 }
 
