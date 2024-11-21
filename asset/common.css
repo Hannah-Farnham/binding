@@ -23,6 +23,7 @@
 	--font-weight-bold: 700;
 	--font-family-2: "mono45-headline", monospace;
 	--font-family-3: "nitti-typewriter-normal", sans-serif;
+	--font-family-4: "franklin-gothic-atf", sans-serif;
 
 	/* Color */
 
@@ -45,21 +46,22 @@ h1{
 	color: var(--black);
 	font-size: var(--size-4);
 	text-transform: lowercase;
+	text-align: center;
 }
 
 p{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-4);
 	color: var(--black);
 	line-height: var(--size-2);
 }
 
 blockquote{
 	font-family: var(--font-family-1);
-	font-size: var(--size-2);
+	font-size: calc(var(--size-1))*1.5;
 	text-align: center;
 	font-weight: 500;
 	color: var(--black);
-	line-height: var(--size-3);
+	line-height: var(--size-2);
 	padding-top: var(--size-4);
 }
 
@@ -84,6 +86,7 @@ body{
 
 .header-container {
 	padding: var(--size-2);
+	justify-content: center;
 }
 
 /* Grid Styles */
@@ -97,29 +100,32 @@ body{
 
 article{
 	background-color: var(--light-grey);
-	margin: var(--size-2);
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: var(--size-2);
+	padding: var(--size-2);
+	overflow-x: hidden;
 }
 
 /* Nav Settings */
 
 nav{
 	background-color: white;
+	display: flex;
+	justify-content: flex-start;
 }
 
 .nav-items ul {
-	padding: var(--size-2);
+	padding: var(--size-1);
 	margin: 0;
 	list-style: none;
 	font-family: var(--font-family-2);
 	font-size: var(--size-1);
+	text-align: center;
 	color: var(--black);
   }
   
 .nav-items li {
-	margin-left: 20px;
 }
 
 #current-page {
@@ -134,7 +140,7 @@ nav{
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	font-family: var(--font-family-2);
+	font-family: var(--font-family-1);
 	color: var(--black);
   }
   
@@ -148,6 +154,11 @@ nav{
 
 	h1{
 		font-size: var(--size-7);
+	}
+
+	nav{
+		display: flex;
+		flex-direction: column; 
 	}
 
 }
@@ -176,12 +187,16 @@ nav{
 	}
 
 	.basic {
-		grid-column: span 6;
 		padding: var(--size-3);
+		grid-column: span 6;
 	}
 
 	h1{
-		font-size: var(--size-6);
+		font-size: var(--size-8);
+	}
+
+	.header-container{
+		padding: var(--size-4);
 	}
 
 	#info {
