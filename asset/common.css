@@ -164,10 +164,12 @@ nav{
 	z-index: 1000;
 }
 
+a{
+	font-family: var(--font-family-1);
+}
+
 .nav-items {
 	padding: var(--size-1);
-	font-family: var(--font-family-2);
-	font-weight: 300;
 	font-size: var(--size-1);
 	text-align: center;
 	color: var(--black);

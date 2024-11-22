@@ -3,6 +3,10 @@
 h1{
 	transform: rotate(-90deg);
 }
+
+a{
+	font-family: var(--font-family-1);
+}
 	/* Grid Settings */
 
 .heading{
