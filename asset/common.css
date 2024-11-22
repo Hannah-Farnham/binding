@@ -18,12 +18,12 @@
 
 	/* Font */
 
-	--font-family-1: "cofo-sans-mono-variable", sans-serif;
+	--font-family-1: "Caveat", cursive;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
 	--font-family-2: "mono45-headline", monospace;
-	--font-family-3: "megabase-open", sans-serif;
-	--font-family-4: "aktiv-grotesk", sans-serif;
+	--font-family-3: "hwt-mardell", sans-serif;
+	--font-family-4: "degular-mono", sans-serif;
 
 	/* Color */
 
@@ -58,9 +58,8 @@ p{
 
 blockquote{
 	font-family: var(--font-family-1);
-	font-size: calc(var(--size-1)*1.3);
+	font-size: var(--size-2);
 	text-align: center;
-	font-weight: 500;
 	color: var(--black);
 	line-height: var(--size-3);
 	padding-top: var(--size-4);
@@ -90,10 +89,6 @@ body{
 	justify-content: center;
 }
 
-.empty{
-	height: var(--size-10);
-}
-
 /* Grid Styles */
 
 article{
@@ -107,11 +102,14 @@ article{
 
 .basic{
 	background-color: var(--light-grey);
-	border: 1px var(--dark-grey) dashed;
+	border: 1px var(--black) solid;
 	text-align: left;
 	padding: var(--size-2);
 }
 
+.empty{
+	height: var(--size-10);
+}
 
 /* Nav Settings */
 
@@ -119,7 +117,6 @@ nav{
 	background-color: var(--white);
 	display: flex;
 	justify-content: flex-start;
-	border-right: 1px var(--light-grey) solid;
 }
 
 .nav-items {
@@ -249,7 +246,8 @@ nav{
 
 #info ul {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
+	align-items: center;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -257,6 +255,11 @@ nav{
 	color: var(--black);
   }
   
+.line {
+	border: .75px var(--black) solid;
+	flex-grow: 1;
+}
+
 #info li {
 	margin-left: 20px;
 }
@@ -293,6 +296,7 @@ nav{
 
 	nav{
 		grid-column: span 2;
+		border-right: 1px var(--black) solid;
 	}
 
 	.nav-items {

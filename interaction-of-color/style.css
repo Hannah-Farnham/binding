@@ -10,16 +10,19 @@
 #header-1{
 	background-color: var(--dark-orange);
 	transform: rotate(5deg);
+	border: 1px var(--black) solid;
 }
 	
 #header-2{
 	background-color: var(--dark-pink);
 	transform: rotate(-5deg);
+	border: 1px var(--black) solid;
 }
 	
 #header-3{
 	background-color: var(--dark-blue);
 	transform: rotate(5deg);
+	border: 1px var(--black) solid;
 }
 
 	/* Grid Styles Body */
