@@ -13,17 +13,29 @@
 	font-size: 200px;
 	border: 1px var(--black) solid;
 }
-	
+
+#header-1:hover{
+	transform: rotate(-5deg);
+}
+
 #header-2{
 	background-color: var(--dark-red);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
 }
-	
+
+#header-2:hover{
+	transform: rotate(5deg);
+}
+
 #header-3{
 	background-color: var(--dark-blue);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
+}
+
+#header-3:hover{
+	transform: rotate(-5deg);
 }
 
 	/* Grid Styles Body */
