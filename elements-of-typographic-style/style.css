@@ -1,6 +1,12 @@
 
 	/* Font Settings */
+h1 {
+	font-size: var(--size-3);
+}
 
+h2{
+	background-color: var(--light-green);
+}
 
 	/* Grid Settings */
 
@@ -25,87 +31,130 @@
 	border: 1px var(--black) solid;
 }
 
-	/* Grid Styles Body */
+#header-4{
+	background-color: var(--dark-chartreuse);
+	transform: rotate(-5deg);
+	border: 1px var(--black) solid;
+}
+
+#header-5{
+	background-color: var(--dark-purple);
+	transform: rotate(5deg);
+	border: 1px var(--black) solid;
+}
+
+#heading-line-2{
+	padding-top: 0px;
+}
+
+/* Grid Styles Body */
 	
-	#quotation:nth-child(6){
-		background-color: var(--light-yellow);
-		transform: rotate(-10deg);
-		transform-origin: center;
-		top: 10px;
-		animation: rotate 4s ease-in-out infinite;
+#quotation:nth-child(6){
+	background-color: var(--light-chartreuse);
+	transform: rotate(-10deg);
+	transform-origin: center;
+	top: 10px;
+	animation: rotate 4s ease-in-out infinite;
+}
+	
+@keyframes rotate {
+	0% {
+	transform: rotate(0deg);
 	}
-	
-	@keyframes rotate {
-		0% {
-		transform: rotate(0deg);
-		}
-		50% {
-		transform: rotate(15deg);
-		}
-		100% {
-		transform: rotate(0deg);
-		}
+	50% {
+	transform: rotate(-15deg);
 	}
-	
-	#quotation:nth-child(7){
-		background-color: var(--light-red);
-		transform: rotate(15deg);
-		transform-origin: center;
+	100% {
+	transform: rotate(0deg);
 	}
+}
+
+#quotation:nth-child(7){
+	background-color: var(--light-purple);
+	transform: rotate(15deg);
+	transform-origin: center;
+}
 	
-	#quotation:nth-child(12){
-		background-color: var(--light-yellow);
+#quotation:nth-child(13){
+	background-color: var(--light-chartreuse);
+	transform: rotate(-10deg);
+	transform-origin: center;
+}
+	
+#quotation:nth-child(14){
+	background-color: var(--light-green);
+	transform: rotate(10deg);
+	transform-origin: center;
+}
+	
+#quotation:nth-child(15){
+	background-color: var(--light-purple);
+	transform: rotate(-10deg);
+	transform-origin: center;
+}
+		
+	/* Nav Settings */
+	
+	
+	/* Info Settings (Below Header) */
+
+	
+	/* Media Queries */
+	
+@media (min-width: 1080px) {
+
+	h1 {
+		font-size: var(--size-6);
+	}
+
+		/* Grid Styles Heading */
+
+	.header{
+		height: fit-content;
+	}
+
+	#heading-line-2{
+		height: 0px;
+	}
+
+	#header-1{
+		transform: rotate(20deg);
+		}
+		
+	#header-2{
 		transform: rotate(-15deg);
-		transform-origin: center;
 	}
-	
-	#quotation:nth-child(13){
-		background-color: var(--light-navy);
-		transform: rotate(15deg);
-		transform-origin: center;
-	}
-	
-	#quotation:nth-child(14){
-		background-color: var(--light-red);
-		transform: rotate(-15deg);
-		transform-origin: center;
-	}
-		
-		/* Nav Settings */
-		
-	
-		/* Info Settings (Below Header) */
-	
-		
-		/* Media Queries */
-		
-	@media (min-width: 1080px) {
-	
-			/* Grid Styles Heading */
-	
-		#header-1{
-			transform: rotate(20deg);
-		}
 			
-		#header-2{
-			transform: rotate(-15deg);
+	#header-3{
+		transform: rotate(20deg);
 		}
-			
-		#header-3{
-			transform: rotate(20deg);
-		}
-	
-			/* Grid Styles Body */
-	
-		#quotation{
-			grid-column: span 4;
-		}
-	
-		.basic:nth-child(12){
-			grid-column: span 8;
-		}
-	
-		.body-text{
-			justify-self: end;
-		}
+
+		/* Grid Styles Body */
+
+	#quotation{
+		grid-column: span 4;
 	}
+	
+	.basic:nth-child(12){
+		grid-column: span 8;
+	}
+	
+	.body-text{
+		justify-self: end;
+	}
+	
+	.horizontal{
+		grid-column: span 4;
+	}
+	#header-4{
+		position: relative;
+		top: 160px;
+		left: -480px;
+	}
+	
+	#header-5{
+		position: relative;
+		top: 60px;
+		left: -540px;
+	}
+}

@@ -178,6 +178,18 @@ nav{
 	overflow: hidden;
 }
 
+.nav-items:hover{
+	background-color: var(--light-grey);
+}
+
+#current-page {
+	background-color: var(--black);
+}
+
+#current-page a {
+	color: var(--white);
+}
+
 /* Nav Visuals */
 
 	/* Square General */
@@ -220,10 +232,6 @@ nav{
 	position: relative;
 	bottom: 96px;
 	z-index: 3;
-}
-
-#current-page {
-	background-color: var(--light-grey);
 }
 
 	/* Design Squares */
