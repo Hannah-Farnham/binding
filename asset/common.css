@@ -375,7 +375,7 @@ nav{
 		grid-template-columns: repeat(12, 1fr);
 		gap: var(--size-2);
 		row-gap: var(--size-10);
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		padding: var(--size-2);
 	}
 

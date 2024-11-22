@@ -5,17 +5,17 @@ h1{
 }
 	/* Grid Settings */
 
-article{
+.heading{
 	display: flex;
 	justify-items: center;
-	height: 100%;
-	width: 100%;
+	grid-row: span 25;
+	margin: 0 auto;
 }
 	
 	/* Grid Styles Heading */
 	
 #header-1{
-	background-color: var(--dark-chartreuse);
+	background-color: var(--dark-red);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 	display: flex; 
@@ -25,7 +25,7 @@ article{
 }
 
 #header-2{
-	background-color: var(--dark-red);
+	background-color: var(--dark-blue);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
 	display: flex; 
@@ -35,7 +35,7 @@ article{
 }
 
 #header-3{
-	background-color: var(--dark-blue);
+	background-color: var(--dark-chartreuse);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 	display: flex; 
@@ -96,6 +96,25 @@ article{
 	
 	#header-3{
 		width: 300px;
+	}
+
+	h1{
+		font-size: var(--size-6);
+	}
+
+	.heading{
+		display: flex;
+		grid-row: span 2;
+		height: 800px;
+	}
+
+	article {
+		grid-column: span 10;
+		margin: none;
+	}
+
+	#colophon{
+		grid-column: span 4;
 	}
 
 		/* Grid Styles Heading */
