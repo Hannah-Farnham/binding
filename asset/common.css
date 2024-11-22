@@ -58,10 +58,10 @@ p{
 
 blockquote{
 	font-family: var(--font-family-1);
-	font-size: var(--size-2);
+	font-size: calc(var(--size-2)*1.3);
 	text-align: center;
 	color: var(--black);
-	line-height: var(--size-3);
+	line-height: calc(var(--size-2)*1.5);
 	padding-top: var(--size-4);
 }
 
@@ -252,6 +252,7 @@ nav{
 	margin: 0;
 	list-style: none;
 	font-family: var(--font-family-1);
+	font-size: var(--size-1);
 	color: var(--black);
   }
   
@@ -309,6 +310,10 @@ nav{
 	#info {
 		grid-column: span 12;
 	}
+
+	#info ul {
+		font-size: var(--size-2);
+	  }
 
 	/* Article Grid Styles */
 	
