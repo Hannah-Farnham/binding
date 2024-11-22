@@ -1,7 +1,20 @@
 
 	/* Font Settings */
+h1 {
+	font-size: var(--size-4);
+}
 
+h2 {
+	transform: rotate(-20deg);
+}
 
+#h2-pink {
+	background-color: var(--light-pink);
+}
+
+h2:nth-child(2){
+	background-color: var(--light-blue);
+}
 	/* Grid Settings */
 
 	
@@ -27,90 +40,132 @@
 
 	/* Grid Styles Body */
 	
-	#quotation:nth-child(6){
-		background-color: var(--light-yellow);
-		transform: rotate(-10deg);
-		transform-origin: center;
-		top: 10px;
-		animation: rotate 4s ease-in-out infinite;
+#quotation:nth-child(6){
+	background-color: var(--light-orange);
+	transform: rotate(-10deg);
+	transform-origin: center;
+	top: 10px;
+	animation: rotate 4s ease-in-out infinite;
+}
+	
+@keyframes rotate {
+	0% {
+	transform: rotate(0deg);
 	}
-	
-	@keyframes rotate {
-		0% {
-		transform: rotate(0deg);
-		}
-		50% {
-		transform: rotate(15deg);
-		}
-		100% {
-		transform: rotate(0deg);
-		}
+	50% {
+	transform: rotate(15deg);
 	}
+	100% {
+	transform: rotate(0deg);
+	}	
+}
 	
-	#quotation:nth-child(7){
-		background-color: var(--light-red);
-		transform: rotate(15deg);
-		transform-origin: center;
-	}
-	
-	#quotation:nth-child(12){
-		background-color: var(--light-yellow);
-		transform: rotate(-15deg);
-		transform-origin: center;
-	}
-	
-	#quotation:nth-child(13){
-		background-color: var(--light-navy);
-		transform: rotate(15deg);
-		transform-origin: center;
-	}
-	
-	#quotation:nth-child(14){
-		background-color: var(--light-red);
-		transform: rotate(-15deg);
-		transform-origin: center;
-	}
-		
-		/* Nav Settings */
-		
-	
-		/* Info Settings (Below Header) */
-	
-		
-		/* Media Queries */
-		
-	@media (min-width: 1080px) {
-	
-			/* Grid Styles Heading */
+#quotation:nth-child(7){
+	background-color: var(--light-pink);
+	transform: rotate(-15deg);
+	transform-origin: center;
+}
 
-		#header-1{
-			transform: rotate(10deg);
-		}
-			
-		#header-2{
-			transform: rotate(-15deg);
-			position: relative;
-			right: 400px;
-			bottom: 100px;
-		}
-			
-		#header-3{
-			transform: rotate(10deg);
-			position: relative;
-			right: 400px;
-		}
+.IOC{
+	font-family: "EB Garamond", serif;;
+}
+
+
+		
+	/* Nav Settings */
+
+
+	/* Info Settings (Below Header) */
+
 	
-			/* Grid Styles Body */
-	
-		#quotation{
-			grid-column: span 4;
-		}
-	
-		.basic:nth-child(12){
-			grid-column: span 8;
-		}
-	
-		.body-text{
-			justify-self: end;
-		}
+	/* Media Queries */
+
+@media (min-width: 768px) {
+
+	h1{
+		font-size: var(--size-7);
 	}
+
+}	
+	
+@media (min-width: 1080px) {
+
+	h1 {
+		font-size: calc(var(--size-8)*1.1);
+	}
+
+		/* Grid Styles Heading */
+
+	#header-1{
+		transform: rotate(10deg);
+	}
+		
+	#header-2{
+		transform: rotate(-15deg);
+		position: relative;
+		right: 400px;
+		bottom: 100px;
+	}
+		
+	#header-3{
+		transform: rotate(10deg);
+		position: relative;
+		right: 400px;
+	}
+		
+	/* Grid Styles Body */
+	
+	#quotation{
+		grid-column: span 4;
+	}
+
+	.basic:nth-child(12){
+		grid-column: span 8;
+	}
+	
+	.body-text{
+		justify-self: end;
+	}
+
+	.horizontal{
+		grid-column: span 4;
+	}
+
+	#IOC-1{
+		grid-column: span 3;
+		background-color: var(--light-blue);
+		transform: rotate(15deg);
+		transform-origin: center;
+	}
+	
+	#IOC-2{
+		grid-column: span 3;
+		background-color: var(--light-pink);
+		transform: rotate(-15deg);
+		transform-origin: center;
+	}
+	
+	#IOC-3{
+		grid-column: span 3;
+		background-color: var(--light-orange);
+		transform: rotate(15deg);
+		transform-origin: center;
+	}
+	
+	#IOC-4{
+		grid-column: span 3;
+		background-color: var(--light-blue);
+		transform: rotate(-15deg);
+		transform-origin: center;
+	}
+}
+
+
+
+@media (min-width: 1500px) {
+
+	h1{
+		font-size: var(--size-9);
+	}
+
+}

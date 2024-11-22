@@ -64,11 +64,14 @@ h1{
 }
 
 h2{
-	font-family: var(--font-family-3);
-	font-weight: var(--font-weight-bold);
+	font-family: var(--font-family-2);
+	font-weight: var(--font-weight-regular);
 	color: var(--black);
-	font-size: var(--size-3);
-	line-height: 2ch;
+	font-size: var(--size-2);
+	display: inline;
+	background-color: var(--light-pink);
+	padding: var(--size-1);
+	border: 1px var(--black) solid;
 }
 
 h3{
