@@ -21,74 +21,96 @@
 	
 #header-3{
 	background-color: var(--dark-pink);
-	transform: rotate(-5deg);
+	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 }
 
 	/* Grid Styles Body */
 	
-.basic:nth-child(5){
-	background-color: var(--light-blue);
-	transform: rotate(-10deg);
-	transform-origin: center;
-}
-
-.basic:nth-child(9){
-	background-color: var(--light-pink);
-	transform: rotate(15deg);
-	transform-origin: center;
-}
-
-.basic:nth-child(10){
-	background-color: var(--light-orange);
-	transform: rotate(-15deg);
-	transform-origin: center;
-}
-
-.basic:nth-child(11){
-	background-color: var(--light-blue);
-	transform: rotate(15deg);
-	transform-origin: center;
-}
-	
-	/* Nav Settings */
-	
-
-	/* Info Settings (Below Header) */
-
-	
-	/* Media Queries */
-	
-@media (min-width: 1080px) {
-
-		/* Grid Styles Heading */
-
-	#header-1{
-		transform: rotate(20deg);
+	#quotation:nth-child(6){
+		background-color: var(--light-yellow);
+		transform: rotate(-10deg);
+		transform-origin: center;
+		top: 10px;
+		animation: rotate 4s ease-in-out infinite;
 	}
-		
-	#header-2{
+	
+	@keyframes rotate {
+		0% {
+		transform: rotate(0deg);
+		}
+		50% {
+		transform: rotate(15deg);
+		}
+		100% {
+		transform: rotate(0deg);
+		}
+	}
+	
+	#quotation:nth-child(7){
+		background-color: var(--light-red);
+		transform: rotate(15deg);
+		transform-origin: center;
+	}
+	
+	#quotation:nth-child(12){
+		background-color: var(--light-yellow);
 		transform: rotate(-15deg);
+		transform-origin: center;
+	}
+	
+	#quotation:nth-child(13){
+		background-color: var(--light-navy);
+		transform: rotate(15deg);
+		transform-origin: center;
+	}
+	
+	#quotation:nth-child(14){
+		background-color: var(--light-red);
+		transform: rotate(-15deg);
+		transform-origin: center;
 	}
 		
-	#header-3{
-		transform: rotate(-20deg);
-		position: absolute;
-		top: 200px;
-		right: var(--size-1);
-	}
+		/* Nav Settings */
+		
+	
+		/* Info Settings (Below Header) */
+	
+		
+		/* Media Queries */
+		
+	@media (min-width: 1080px) {
+	
+			/* Grid Styles Heading */
 
-		/* Grid Styles Body */
-
-	.basic:nth-child(3),:nth-child(6),:nth-child(7){
-		grid-column: span 8;
+		#header-1{
+			transform: rotate(10deg);
+		}
+			
+		#header-2{
+			transform: rotate(-15deg);
+			position: relative;
+			right: 400px;
+			bottom: 100px;
+		}
+			
+		#header-3{
+			transform: rotate(10deg);
+			position: relative;
+			right: 400px;
+		}
+	
+			/* Grid Styles Body */
+	
+		#quotation{
+			grid-column: span 4;
+		}
+	
+		.basic:nth-child(12){
+			grid-column: span 8;
+		}
+	
+		.body-text{
+			justify-self: end;
+		}
 	}
-
-	.basic:nth-child(4),:nth-child(5),:nth-child(9),:nth-child(10),:nth-child(11){
-		grid-column: span 4;
-	}
-
-	.basic:nth-child(12){
-		grid-column: span 8;
-	}
-}

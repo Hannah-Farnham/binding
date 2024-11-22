@@ -1,13 +1,7 @@
 
 	/* Font Settings */
 
-.highlight{
-	background-color: var(--light-yellow);
-	display: inline;
-}
-
 	/* Grid Settings */
-
 	
 	/* Grid Styles Heading */
 	
@@ -32,18 +26,27 @@
 
 	/* Grid Styles Body */
 	
-#quotation:nth-child(7){
+#quotation:nth-child(6){
 	background-color: var(--light-yellow);
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
+	animation: rotate 4s ease-in-out infinite;
 }
 
-#quotation:nth-child(7):hover{
-	transform: rotate(-15deg);
+@keyframes rotate {
+	0% {
+	transform: rotate(0deg);
+	}
+	50% {
+	transform: rotate(15deg);
+	}
+	100% {
+	transform: rotate(0deg);
+	}
 }
 
-#quotation:nth-child(8){
+#quotation:nth-child(7){
 	background-color: var(--light-red);
 	transform: rotate(15deg);
 	transform-origin: center;
@@ -99,5 +102,9 @@
 
 	.basic:nth-child(12){
 		grid-column: span 8;
+	}
+
+	.body-text{
+		justify-self: end;
 	}
 }

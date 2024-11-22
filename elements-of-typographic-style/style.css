@@ -27,65 +27,85 @@
 
 	/* Grid Styles Body */
 	
-.basic:nth-child(5){
-	background-color: var(--light-blue);
-	transform: rotate(-10deg);
-	transform-origin: center;
-}
-
-.basic:nth-child(9){
-	background-color: var(--light-pink);
-	transform: rotate(15deg);
-	transform-origin: center;
-}
-
-.basic:nth-child(10){
-	background-color: var(--light-orange);
-	transform: rotate(-15deg);
-	transform-origin: center;
-}
-
-.basic:nth-child(11){
-	background-color: var(--light-blue);
-	transform: rotate(15deg);
-	transform-origin: center;
-}
-	
-	/* Nav Settings */
-	
-
-	/* Info Settings (Below Header) */
-
-	
-	/* Media Queries */
-	
-@media (min-width: 1080px) {
-
-		/* Grid Styles Heading */
-
-	#header-1{
-		transform: rotate(20deg);
+	#quotation:nth-child(6){
+		background-color: var(--light-yellow);
+		transform: rotate(-10deg);
+		transform-origin: center;
+		top: 10px;
+		animation: rotate 4s ease-in-out infinite;
 	}
-		
-	#header-2{
+	
+	@keyframes rotate {
+		0% {
+		transform: rotate(0deg);
+		}
+		50% {
+		transform: rotate(15deg);
+		}
+		100% {
+		transform: rotate(0deg);
+		}
+	}
+	
+	#quotation:nth-child(7){
+		background-color: var(--light-red);
+		transform: rotate(15deg);
+		transform-origin: center;
+	}
+	
+	#quotation:nth-child(12){
+		background-color: var(--light-yellow);
 		transform: rotate(-15deg);
+		transform-origin: center;
+	}
+	
+	#quotation:nth-child(13){
+		background-color: var(--light-navy);
+		transform: rotate(15deg);
+		transform-origin: center;
+	}
+	
+	#quotation:nth-child(14){
+		background-color: var(--light-red);
+		transform: rotate(-15deg);
+		transform-origin: center;
 	}
 		
-	#header-3{
-		transform: rotate(20deg);
+		/* Nav Settings */
+		
+	
+		/* Info Settings (Below Header) */
+	
+		
+		/* Media Queries */
+		
+	@media (min-width: 1080px) {
+	
+			/* Grid Styles Heading */
+	
+		#header-1{
+			transform: rotate(20deg);
+		}
+			
+		#header-2{
+			transform: rotate(-15deg);
+		}
+			
+		#header-3{
+			transform: rotate(20deg);
+		}
+	
+			/* Grid Styles Body */
+	
+		#quotation{
+			grid-column: span 4;
+		}
+	
+		.basic:nth-child(12){
+			grid-column: span 8;
+		}
+	
+		.body-text{
+			justify-self: end;
+		}
 	}
-
-		/* Grid Styles Body */
-
-	.basic:nth-child(3),:nth-child(6),:nth-child(7){
-		grid-column: span 8;
-	}
-
-	.basic:nth-child(4),:nth-child(5),:nth-child(9),:nth-child(10),:nth-child(11){
-		grid-column: span 4;
-	}
-
-	.basic:nth-child(12){
-		grid-column: span 8;
-	}
-}
