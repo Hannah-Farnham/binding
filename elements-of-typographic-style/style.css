@@ -8,19 +8,19 @@
 	/* Grid Styles Heading */
 	
 #header-1{
-	background-color: var(--dark-orange);
+	background-color: var(--dark-chartreuse);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 }
 	
 #header-2{
-	background-color: var(--dark-pink);
+	background-color: var(--dark-purple);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
 }
 	
 #header-3{
-	background-color: var(--dark-blue);
+	background-color: var(--dark-green);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 }
