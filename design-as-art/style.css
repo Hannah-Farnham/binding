@@ -8,19 +8,24 @@
 	/* Grid Styles Heading */
 	
 #header-1{
-	/* background-color: var(--dark-orange); */
+	background-color: var(--dark-orange);
 	transform: rotate(5deg);
 	font-size: 200px;
+	border: 1px var(--black) solid;
+
 }
 	
 #header-2{
-	/* background-color: var(--dark-pink); */
+	background-color: var(--dark-pink);
 	transform: rotate(-5deg);
+	border: 1px var(--black) solid;
 }
 	
 #header-3{
-	/* background-color: var(--dark-blue); */
+	background-color: var(--dark-blue);
 	transform: rotate(5deg);
+	border: 1px var(--black) solid;
+
 }
 
 	/* Grid Styles Body */
@@ -29,6 +34,8 @@
 	background-color: var(--light-blue);
 	transform: rotate(-10deg);
 	transform-origin: center;
+	position: sticky;
+	top: 10px;
 }
 
 .basic:nth-child(5):hover{
