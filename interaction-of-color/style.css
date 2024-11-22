@@ -23,9 +23,6 @@
 	background-color: var(--dark-pink);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
-	position: absolute;
-	top: 16px;
-	right: var(--size-1);
 }
 
 	/* Grid Styles Body */
@@ -76,6 +73,9 @@
 		
 	#header-3{
 		transform: rotate(-20deg);
+		position: absolute;
+		top: 200px;
+		right: var(--size-1);
 	}
 
 		/* Grid Styles Body */
