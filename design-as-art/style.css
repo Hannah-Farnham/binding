@@ -6,12 +6,12 @@
 	/* Nav Design Squares */
 
 #square-4 {
-	background-color: var(--light-red);
+	background-color: var(--dark-red);
 	transform: rotate(-5deg);
 }
 
 #square-7 {
-	background-color: var(--light-navy);
+	background-color: var(--dark-yellow);
 	transform: rotate(5deg);
 }
 
@@ -31,7 +31,7 @@
 }
 	
 #header-3{
-	background-color: var(--dark-navy);
+	background-color: #3166CA;
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 }
@@ -71,7 +71,7 @@
 }
 
 #quotation:nth-child(15){
-	background-color: var(--light-navy);
+	background-color: var(--light-blue);
 	transform: rotate(10deg);
 	transform-origin: center;
 }

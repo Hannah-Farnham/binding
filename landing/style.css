@@ -22,25 +22,25 @@ a{
 
 .type-link{
 	font-family: var(--font-family-4);
-	color: var(--dark-chartreuse);
+	color: var(--dark-green);
 	text-decoration: underline;
 }
 
 	/* Nav Overall Squares */
 
 #square-1 {
-	background-color: var(--light-yellow);
+	background-color: var(--dark-red);
 	transform: rotate(-5deg);
 }
 	
 #square-2 {
-	background-color: var(--light-blue);
+	background-color: var(--dark-blue);
 	transform: rotate(5deg);
 }
 	
 #square-3 {
 	border: 1px var(--black) solid;
-	background-color: var(--light-purple);
+	background-color: var(--dark-green);
 	transform: rotate(-5deg);
 	z-index: 3;
 }
@@ -88,7 +88,7 @@ a{
 }
 
 #header-3{
-	background-color: var(--dark-chartreuse);
+	background-color: var(--dark-green);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 	display: flex; 

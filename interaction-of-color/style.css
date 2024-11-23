@@ -16,7 +16,7 @@ h2:nth-child(2){
 
 #square-5 {
 	border: 1px var(--black) solid;
-	background-color: var(--light-blue);
+	background-color: var(--dark-blue);
 	z-index: 2;
 	position: relative;
 	bottom: 48px;
@@ -26,7 +26,7 @@ h2:nth-child(2){
 
 #square-8 {
 	border: 1px var(--black) solid;
-	background-color: var(--light-orange);
+	background-color: var(--dark-orange);
 	position: relative;
 	left: 16px;
 	top: 16px;
@@ -46,7 +46,7 @@ h2:nth-child(2){
 }
 	
 #header-2{
-	background-color: var(--dark-orange);
+	background-color: var(--dark-yellow);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
 }
