@@ -7,6 +7,44 @@ h1{
 a{
 	font-family: var(--font-family-1);
 }
+
+.design-link{
+	font-family: var(--font-family-4);
+	color: var(--dark-red);
+	text-decoration: underline;
+}
+
+.color-link{
+	font-family: var(--font-family-4);
+	color: var(--dark-blue);
+	text-decoration: underline;
+}
+
+.type-link{
+	font-family: var(--font-family-4);
+	color: var(--dark-chartreuse);
+	text-decoration: underline;
+}
+
+	/* Nav Overall Squares */
+
+#square-1 {
+	background-color: var(--light-yellow);
+	transform: rotate(-5deg);
+}
+	
+#square-2 {
+	background-color: var(--light-blue);
+	transform: rotate(5deg);
+}
+	
+#square-3 {
+	border: 1px var(--black) solid;
+	background-color: var(--light-purple);
+	transform: rotate(-5deg);
+	z-index: 3;
+}
+
 	/* Grid Settings */
 
 .heading{
@@ -26,7 +64,13 @@ a{
 	justify-content: center;
 	align-items: center;
 	width: 100px;
+	transition: transform 0.3s ease;
 }
+
+#header-1:hover{
+	transform: rotate(-5deg);
+}
+
 
 #header-2{
 	background-color: var(--dark-blue);
@@ -36,6 +80,11 @@ a{
 	justify-content: center;
 	align-items: center;
 	width: 100px;
+	transition: transform 0.3s ease;
+}
+
+#header-2:hover{
+	transform: rotate(5deg);
 }
 
 #header-3{
@@ -46,6 +95,11 @@ a{
 	justify-content: center;
 	align-items: center;
 	width: 100px;
+	transition: transform 0.3s ease;
+}
+
+#header-3:hover{
+	transform: rotate(-5deg);
 }
 
 	/* Grid Styles Body */
@@ -87,6 +141,14 @@ a{
 
 	
 	/* Media Queries */
+
+@media (min-width: 768px) {
+
+	h1{
+		font-size: var(--size-6);
+	}
+
+}
 	
 @media (min-width: 1080px) {
 

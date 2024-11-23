@@ -8,6 +8,18 @@ h2{
 	background-color: var(--light-green);
 }
 
+	/* Nav Type Squares */
+
+#square-6 {
+	background-color: var(--light-chartreuse);
+	transform: rotate(-5deg);
+}
+
+#square-9 {
+	background-color: var(--light-purple);
+	transform: rotate(5deg);
+}
+
 	/* Grid Settings */
 
 	

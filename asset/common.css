@@ -72,6 +72,7 @@ h2{
 	background-color: var(--light-pink);
 	padding: var(--size-1);
 	border: 1px var(--black) solid;
+	text-wrap: pretty;
 }
 
 h3{
@@ -79,13 +80,15 @@ h3{
 	font-weight: var(--font-weight-bold);
 	color: var(--black);
 	font-size: var(--size-2);
-	line-height: 3ch;
+	line-height: 2ch;
+	text-wrap: pretty;
 }
 
 p{
 	font-family: var(--font-family-4);
 	color: var(--black);
 	line-height: var(--size-2);
+	text-wrap: pretty;
 }
 
 blockquote{
@@ -95,6 +98,7 @@ blockquote{
 	color: var(--black);
 	line-height: calc(var(--size-2)*1.5);
 	padding-top: var(--size-4);
+	text-wrap: pretty;
 }
 
 cite{
@@ -164,7 +168,7 @@ nav{
 	z-index: 1000;
 }
 
-a{
+.nav-text{
 	font-family: var(--font-family-1);
 }
 
@@ -182,14 +186,6 @@ a{
 
 .nav-items:hover{
 	background-color: var(--light-grey);
-}
-
-#current-page {
-	background-color: var(--black);
-}
-
-#current-page a {
-	color: var(--white);
 }
 
 /* Nav Visuals */
@@ -218,10 +214,10 @@ a{
 }
 
 #square-2 {
-	background-color: var(--light-green);
+	background-color: var(--white);
 	border: 1px var(--black) solid;
 	position: relative;
-	bottom: 38px;
+	bottom: 40px;
 	left: 8px;
 	z-index: 2;
 }
@@ -259,7 +255,7 @@ a{
 
 #square-5 {
 	border: 1px var(--black) solid;
-	background-color: var(--light-purple);
+	background-color: var(--light-blue);
 	z-index: 2;
 	position: relative;
 	bottom: 48px;
@@ -268,7 +264,7 @@ a{
 
 #square-8 {
 	border: 1px var(--black) solid;
-	background-color: var(--light-yellow);
+	background-color: var(--light-white);
 	position: relative;
 	left: 16px;
 	top: 16px;

@@ -3,6 +3,18 @@
 
 	/* Grid Settings */
 	
+	/* Nav Design Squares */
+
+#square-4 {
+	background-color: var(--light-red);
+	transform: rotate(-5deg);
+}
+
+#square-7 {
+	background-color: var(--light-navy);
+	transform: rotate(5deg);
+}
+
 	/* Grid Styles Heading */
 	
 #header-1{
