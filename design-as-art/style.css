@@ -68,18 +68,24 @@
 	background-color: var(--light-yellow);
 	transform: rotate(-10deg);
 	transform-origin: center;
+	position: sticky;
+	top: 10px;
 }
 
 #quotation:nth-child(15){
 	background-color: var(--light-blue);
 	transform: rotate(10deg);
 	transform-origin: center;
+	position: sticky;
+	top: 10px;
 }
 
 #quotation:nth-child(16){
 	background-color: var(--light-red);
 	transform: rotate(-10deg);
 	transform-origin: center;
+	position: sticky;
+	top: 10px;
 }
 	
 	/* Nav Settings */
