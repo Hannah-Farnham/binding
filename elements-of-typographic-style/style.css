@@ -1,6 +1,7 @@
 
 	/* Font Settings */
-h1 {
+
+h1{
 	font-size: var(--size-3);
 }
 
@@ -16,7 +17,7 @@ h2{
 }
 
 #square-9 {
-	background-color: var(--dark-pink);
+	background-color: var(--light-yellow);
 	transform: rotate(5deg);
 }
 
@@ -24,35 +25,50 @@ h2{
 
 	
 	/* Grid Styles Heading */
+
+@keyframes rotate-left{
+	0% {
+	transform: rotate(-2deg);
+	}
+	50% {
+	transform: rotate(-5deg);
+	}
+	100% {
+	transform: rotate(-2deg);
+	}
+}
+
+@keyframes rotate-right {
+	0% {
+	transform: rotate(2deg);
+	}
+	50% {
+	transform: rotate(5deg);
+	}
+	100% {
+	transform: rotate(2deg);
+	}
+}
 	
 #header-1{
-	background-color: var(--dark-orange);
+	background-color: var(--dark-green);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
+	animation: rotate-left 4s ease-in-out infinite;
 }
 	
 #header-2{
-	background-color: var(--dark-cobalt);
+	background-color: var(--dark-yellow);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
+	animation: rotate-right 4s ease-in-out infinite;
 }
 	
 #header-3{
 	background-color: var(--dark-pink);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
-}
-
-#header-4{
-	background-color: var(--dark-orange);
-	transform: rotate(-5deg);
-	border: 1px var(--black) solid;
-}
-
-#header-5{
-	background-color: var(--dark-cobalt);
-	transform: rotate(5deg);
-	border: 1px var(--black) solid;
+	animation: rotate-left 4s ease-in-out infinite;
 }
 
 #heading-line-2{
@@ -66,19 +82,6 @@ h2{
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
-	animation: rotate 4s ease-in-out infinite;
-}
-	
-@keyframes rotate {
-	0% {
-	transform: rotate(0deg);
-	}
-	50% {
-	transform: rotate(-15deg);
-	}
-	100% {
-	transform: rotate(0deg);
-	}
 }
 
 #quotation:nth-child(7){
@@ -119,10 +122,6 @@ h2{
 	
 @media (min-width: 1080px) {
 
-	h1 {
-		font-size: var(--size-8);
-	}
-
 		/* Grid Styles Heading */
 
 	section.heading{
@@ -130,16 +129,20 @@ h2{
 	}
 
 	#header-1{
-		transform: rotate(20deg);
+		transform: rotate(3deg);
 		}
 		
 	#header-2{
-		transform: rotate(-15deg);
+		transform: rotate(-3deg);
 	}
 			
 	#header-3{
-		transform: rotate(20deg);
+		transform: rotate(3deg);
 		}
+
+	h1{
+	font-size: var(--size-8);
+	}	
 
 		/* Grid Styles Body */
 
@@ -158,7 +161,7 @@ h2{
 	.horizontal{
 		grid-column: span 4;
 	}
-
+/* 
 	#header-2{
 		transform: rotate(-5deg);
 		position: relative;
@@ -183,7 +186,7 @@ h2{
 		top: 400px;
 		left: -1100px;
 		transform: rotate(5deg);
-	}
+	} */
 
 	#desktop-only{
 		display: block;

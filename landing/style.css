@@ -40,7 +40,7 @@ a{
 	
 #square-3 {
 	border: 1px var(--black) solid;
-	background-color: var(--dark-green);
+	background-color: var(--dark-yellow);
 	transform: rotate(-5deg);
 	z-index: 3;
 }

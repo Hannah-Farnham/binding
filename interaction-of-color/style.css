@@ -26,7 +26,7 @@ h2:nth-child(2){
 
 #square-8 {
 	border: 1px var(--black) solid;
-	background-color: var(--dark-orange);
+	background-color: var(--light-pink);
 	position: relative;
 	left: 16px;
 	top: 16px;
@@ -38,23 +38,50 @@ h2:nth-child(2){
 
 	
 	/* Grid Styles Heading */
+
+@keyframes rotate-left{
+	0% {
+	transform: rotate(-2deg);
+	}
+	50% {
+	transform: rotate(-5deg);
+	}
+	100% {
+	transform: rotate(-2deg);
+	}
+}
+
+@keyframes rotate-right {
+	0% {
+	transform: rotate(2deg);
+	}
+	50% {
+	transform: rotate(5deg);
+	}
+	100% {
+	transform: rotate(2deg);
+	}
+}
 	
 #header-1{
 	background-color: var(--dark-blue);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
+	animation: rotate-right 4s ease-in-out infinite;
 }
 	
 #header-2{
-	background-color: var(--dark-yellow);
+	background-color: var(--dark-orange);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
+	animation: rotate-left 4s ease-in-out infinite;
 }
 	
 #header-3{
 	background-color: var(--dark-pink);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
+	animation: rotate-right 4s ease-in-out infinite;
 }
 
 	/* Grid Styles Body */
@@ -64,19 +91,6 @@ h2:nth-child(2){
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
-	animation: rotate 4s ease-in-out infinite;
-}
-	
-@keyframes rotate {
-	0% {
-	transform: rotate(0deg);
-	}
-	50% {
-	transform: rotate(15deg);
-	}
-	100% {
-	transform: rotate(0deg);
-	}	
 }
 	
 #quotation:nth-child(7){
@@ -116,20 +130,20 @@ h2:nth-child(2){
 		/* Grid Styles Heading */
 
 	#header-1{
-		transform: rotate(10deg);
+		transform: rotate(3deg);
 	}
 		
 	#header-2{
-		transform: rotate(-15deg);
-		position: relative;
+		transform: rotate(-3deg);
+		/* position: relative;
 		right: 400px;
-		bottom: 100px;
+		bottom: 100px; */
 	}
 		
 	#header-3{
-		transform: rotate(10deg);
-		position: relative;
-		right: 400px;
+		transform: rotate(3deg);
+		/* position: relative;
+		right: 400px; */
 	}
 		
 	/* Grid Styles Body */

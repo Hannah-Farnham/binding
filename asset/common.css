@@ -18,18 +18,23 @@
 
 	/* Font */
 
-	--font-family-1: "Caveat", cursive;
-	--font-family-2: "mono45-headline", monospace;
-	--font-family-3: "fino-sans", sans-serif; 
+	--font-family-1: "aktiv-grotesk", sans-serif;
+	--font-family-2: "Bodoni Moda", serif;
+	--font-family-3: "hwt-mardell", sans-serif; 
 	--font-family-4: "cofo-sans-mono-variable", sans-serif;
-	--font-family-5: "nitti-typewriter-cameo", sans-serif;
+
+	--font-family-5: ;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
 
+	/* Alternatives 
 
-	/* Alternatives */
+	"mono45-headline", monospace;
+	"hwt-mardell", sans-serif; 
+	"Caveat", cursive;
+	"nitti-typewriter-cameo", sans-serif;
 
-	/* "hwt-mardell", sans-serif; */
+	*/
 
 	/* Color */
 
@@ -51,6 +56,9 @@
 	--dark-grey: #ADADAC;
 	--black: #262426;
 	--white: #fafafa;
+
+	/* Expired Colors */
+	
 }
 
 	/* Font Settings */
@@ -65,7 +73,7 @@ h1{
 }
 
 h2{
-	font-family: var(--font-family-2);
+	font-family: var(--font-family-4);
 	font-weight: var(--font-weight-regular);
 	color: var(--black);
 	font-size: var(--size-2);
@@ -74,10 +82,11 @@ h2{
 	padding: var(--size-1);
 	border: 1px var(--black) solid;
 	text-wrap: pretty;
+	text-transform: uppercase;
 }
 
 h3{
-	font-family: var(--font-family-5);
+	font-family: var(--font-family-1);
 	font-weight: var(--font-weight-bold);
 	color: var(--black);
 	font-size: var(--size-2);
@@ -86,7 +95,7 @@ h3{
 }
 
 p{
-	font-family: var(--font-family-4);
+	font-family: var(--font-family-1);
 	color: var(--black);
 	line-height: var(--size-2);
 	text-wrap: pretty;
@@ -109,10 +118,11 @@ cite{
 	justify-content: center;
 	padding-top: var(--size-1);
 	padding-bottom: var(--size-1);
+	text-transform: uppercase;
 }
 
 #quote{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-2);
 	font-size: var(--size-6);	
 	font-weight: 200;
 	text-align: center;
@@ -176,8 +186,9 @@ nav{
 }
 
 .nav-text{
-	font-family: var(--font-family-2);
+	font-family: var(--font-family-4);
 	font-weight: 100;
+	text-transform: uppercase;
 }
 
 .nav-items {
@@ -301,7 +312,7 @@ nav{
 }
 
 #square-text {
-	font-family: "EB Garamond", serif;
+	font-family: var(--font-family-2);
 	font-weight: bold;
 }
 
@@ -315,7 +326,7 @@ nav{
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-4);
 	font-size: var(--size-1);
 	color: var(--black);
   }
@@ -413,9 +424,9 @@ nav{
 
 	.heading{
 		grid-column: span 12;
-		padding-top:  var(--size-6);
-		display: flex;
-		justify-content: flex-start;
+		/* padding-top:  var(--size-6); */
+		/* display: flex;
+		justify-content: flex-start; */
 	}
 
 }
