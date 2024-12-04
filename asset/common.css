@@ -20,11 +20,16 @@
 
 	--font-family-1: "Caveat", cursive;
 	--font-family-2: "mono45-headline", monospace;
-	--font-family-3: "hwt-mardell", sans-serif;
+	--font-family-3: "fino-sans", sans-serif; 
 	--font-family-4: "cofo-sans-mono-variable", sans-serif;
 	--font-family-5: "nitti-typewriter-cameo", sans-serif;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
+
+
+	/* Alternatives */
+
+	/* "hwt-mardell", sans-serif; */
 
 	/* Color */
 
@@ -34,10 +39,10 @@
 	--light-orange: #F2925C;
 	--dark-blue: #5BA5DF;
 	--light-blue: #9CCFF8;
-	--light-green: #E1C605;
-	--dark-green: #C2AB03;
-	--light-purple: #B2ACE7;
-	--dark-purple: #7A73BC;
+	--light-green: #A5EC6F;
+	--dark-green: #79BF43;
+	--light-cobalt: #5288EC;
+	--dark-cobalt: #3166CA;
 	--light-yellow: #FAC546;
 	--dark-yellow: #EFA901;
 	--light-red: #ED605C;
@@ -163,8 +168,16 @@ nav{
 	z-index: 1000;
 }
 
+.nav-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .nav-text{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-2);
+	font-weight: 100;
 }
 
 .nav-items {
@@ -348,7 +361,12 @@ nav{
 
 	.nav-items {
 		font-size: var(--size-2);
-		height: 180px;
+		border-bottom: 1px var(--black) solid;
+		height: 100%;
+	}
+
+	.nav-text{
+		padding-top: var(--size-1);
 	}
 
 	/* Info Settings */

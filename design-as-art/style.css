@@ -31,7 +31,7 @@
 }
 	
 #header-3{
-	background-color: #3166CA;
+	background-color: var(--dark-cobalt);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 }
