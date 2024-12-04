@@ -22,7 +22,7 @@ a{
 
 .type-link{
 	font-family: var(--font-family-4);
-	color: var(--dark-green);
+	color: var(--dark-yellow);
 	text-decoration: underline;
 }
 
@@ -88,7 +88,7 @@ a{
 }
 
 #header-3{
-	background-color: var(--dark-green);
+	background-color: var(--dark-yellow);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
 	display: flex; 

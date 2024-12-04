@@ -21,9 +21,8 @@
 	--font-family-1: "aktiv-grotesk", sans-serif;
 	--font-family-2: "Bodoni Moda", serif;
 	--font-family-3: "hwt-mardell", sans-serif; 
-	--font-family-4: "cofo-sans-mono-variable", sans-serif;
-
-	--font-family-5: ;
+	--font-family-4: "mono45-headline", monospace;
+	--font-family-5: "cofo-sans-mono-variable", sans-serif;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
 
@@ -44,8 +43,8 @@
 	--light-orange: #F2925C;
 	--dark-blue: #5BA5DF;
 	--light-blue: #9CCFF8;
-	--light-green: #A5EC6F;
-	--dark-green: #79BF43;
+	--light-green: #72BE60;
+	--dark-green: #56A643;
 	--light-cobalt: #5288EC;
 	--dark-cobalt: #3166CA;
 	--light-yellow: #FAC546;
@@ -102,27 +101,29 @@ p{
 }
 
 blockquote{
-	font-family: var(--font-family-1);
-	font-size: calc(var(--size-2)*1.3);
+	font-family: var(--font-family-5);
+	font-size: calc(var(--size-1)*1.2);
+	font-weight: 100;
 	color: var(--black);
-	line-height: calc(var(--size-2)*1.5);
+	line-height: calc(var(--size-1)*1.2);
 	padding-top: var(--size-4);
 	text-wrap: pretty;
 }
 
 cite{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-4);
+	font-weight: 100;
 	color: var(--black);
 	text-align: center;
 	display: flex;
-	justify-content: center;
+	justify-content: bottom;
 	padding-top: var(--size-1);
 	padding-bottom: var(--size-1);
 	text-transform: uppercase;
 }
 
 #quote{
-	font-family: var(--font-family-2);
+	font-family: "eb garamond" serif;
 	font-size: var(--size-6);	
 	font-weight: 200;
 	text-align: center;
@@ -327,6 +328,7 @@ nav{
 	margin: 0;
 	list-style: none;
 	font-family: var(--font-family-4);
+	font-weight: 100;
 	font-size: var(--size-1);
 	color: var(--black);
   }
