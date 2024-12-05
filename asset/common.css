@@ -85,7 +85,7 @@ h2{
 }
 
 h3{
-	font-family: var(--font-family-1);
+	font-family: var(--font-family-5);
 	font-weight: var(--font-weight-bold);
 	color: var(--black);
 	font-size: var(--size-2);
@@ -133,7 +133,7 @@ cite{
 
 body{
 	font-size: calc(var(--size-1)*1.1);
-	max-width: 1920px;
+	/* max-width: 1920px; */
 }
 
 .header-container {
@@ -156,11 +156,6 @@ article{
 	border: 1px var(--black) solid;
 	text-align: left;
 	padding: var(--size-2);
-}
-
-.body-text{
-	border-left: 1px var(--black) solid;
-	padding-left: var(--size-2);
 }
 
 .empty{
@@ -313,7 +308,7 @@ nav{
 }
 
 #square-text {
-	font-family: var(--font-family-2);
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-weight: bold;
 }
 

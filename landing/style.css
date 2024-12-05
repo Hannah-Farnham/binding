@@ -1,5 +1,6 @@
 
-	/* Font Settings */
+/* Font Settings */
+
 h1{
 	transform: rotate(-90deg);
 }
@@ -24,6 +25,14 @@ a{
 	font-family: var(--font-family-4);
 	color: var(--dark-yellow);
 	text-decoration: underline;
+}
+
+.author-notes{
+	font-style: italic;
+}
+
+.Book-title{
+	font-size: var(--size-1);
 }
 
 	/* Nav Overall Squares */
@@ -152,6 +161,8 @@ a{
 	
 @media (min-width: 1080px) {
 
+/* Heading Settings */
+
 	#header-1{
 		width: 300px;
 	}
@@ -164,15 +175,28 @@ a{
 		width: 300px;
 	}
 
-	h1{
-		font-size: var(--size-6);
-	}
-
 	.heading{
 		display: flex;
 		grid-row: span 2;
 		height: 800px;
 	}
+
+/* Font Settings */
+
+	h1{
+		font-size: var(--size-8);
+	}
+	
+	#landing-h3{
+		font-size: var(--size-3);
+	}
+
+	#landing-body{
+		font-size: var(--size-2);
+		line-height: var(--size-3);
+	}
+
+/* Grid Settings */
 
 	article {
 		grid-column: span 10;
