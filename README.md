@@ -1,4 +1,5 @@
-This site offers a curated collection of excerpts from some of the most influential design thinkers of the 20th century. Delve into topics such as the the origins of design, the impact of color, and the signifigance of typography.
+This site offers a curated collection of excerpts from some of the most influential design thinkers of the 20th century. 
+Delve into topics such as the the origins of design, the impact of color, and the signifigance of typography.
 
 The first work is "Design as Art" by Bruno Munari. 
 
