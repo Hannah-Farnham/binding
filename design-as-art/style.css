@@ -168,18 +168,25 @@ h2{
 	transform-origin: center;
 	top: 10px;
 	max-height: fit-content;
+	transition: transform 0.5s ease;
 }
 
 #quotation:nth-child(5){
 	background-color: var(--light-cobalt);
 	transform: rotate(15deg);
 	transform-origin: center;
+	transition: transform 0.5s ease;
 }
 
 #quotation:nth-child(6){
 	background-color: var(--light-red);
 	transform: rotate(-8deg);
 	transform-origin: center;
+	transition: transform 0.5s ease;
+}
+
+#quotation:hover{
+	transform: rotate(20deg);
 }
 
 	

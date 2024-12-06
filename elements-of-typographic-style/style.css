@@ -186,18 +186,25 @@ h2{
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
+	transition: transform 0.3s ease;
 }
 
 #quotation:nth-child(8){
 	background-color: var(--light-pink);
 	transform: rotate(15deg);
 	transform-origin: center;
+	transition: transform 0.3s ease;
 }
 	
 #quotation:nth-child(9){
 	background-color: var(--light-yellow);
 	transform: rotate(-10deg);
 	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+#quotation:hover{
+	transform: scale(1.3);
 }
 
 	/* Nav Settings */
@@ -296,6 +303,10 @@ h2{
 	h1{
 		font-size: var(--size-10);
 	}
+
+}
+
+@media (min-width: 1600px) {
 
 	.small-h1 {
 		font-size: var(--size-9);

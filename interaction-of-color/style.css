@@ -176,21 +176,21 @@ h2{
 	background-color: var(--dark-blue);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
-	animation: rotate-right 4s ease-in-out infinite;
+	animation: rotate-right 3s ease-in-out infinite;
 }
 	
 #header-2{
 	background-color: var(--dark-orange);
 	transform: rotate(-5deg);
 	border: 1px var(--black) solid;
-	animation: rotate-left 4s ease-in-out infinite;
+	animation: rotate-left 3s ease-in-out infinite;
 }
 	
 #header-3{
 	background-color: var(--dark-pink);
 	transform: rotate(5deg);
 	border: 1px var(--black) solid;
-	animation: rotate-right 4s ease-in-out infinite;
+	animation: rotate-right 3s ease-in-out infinite;
 }
 
 	/* Grid Styles Body */
@@ -200,17 +200,18 @@ h2{
 	transform: rotate(5deg);
 	transform-origin: center;
 	top: 10px;
+	transition: background-color 0.5s ease;
 }
 	
 #quotation:nth-child(7){
 	background-color: var(--light-pink);
 	transform: rotate(-15deg);
 	transform-origin: center;
-	transition: transform 0.3s ease;
+	transition: background-color 0.5s ease;
 }
 
-#quotation:nth-child(7):hover{
-	transform: scale(1.5);
+#quotation:hover{
+	background-color: var(--light-yellow);
 }
 
 	/* Example Cards */
@@ -225,10 +226,6 @@ h2{
 	text-align: center;
 	color: white;
 	font-size: var(--size-2);
-}
-
-.IOC:hover{
-	color: var(--black);
 }
 
 #IOC-text-style-1{
@@ -329,15 +326,10 @@ h2{
 		
 	#header-2{
 		transform: rotate(-3deg);
-		/* position: relative;
-		right: 400px;
-		bottom: 100px; */
 	}
 		
 	#header-3{
 		transform: rotate(3deg);
-		/* position: relative;
-		right: 400px; */
 	}
 		
 	/* Grid Styles Body */
@@ -371,8 +363,11 @@ h2{
 	#serif-item{
 		grid-column: 4/12;
 	}
-}
 
+	#quotation:nth-child(4){
+		grid-column: span 5;
+	}
+}
 
 
 @media (min-width: 1500px) {
