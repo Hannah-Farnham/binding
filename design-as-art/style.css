@@ -91,6 +91,8 @@ h2{
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
+	max-height: fit-content;
+	min-width: 350px;
 }
 
 #quotation:nth-child(5){
@@ -101,10 +103,10 @@ h2{
 
 #quotation:nth-child(6){
 	background-color: var(--light-red);
-	transform: rotate(-15deg);
+	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
-	max-width: 400px;
+	max-width: 350px;
 }
 	
 	/* Nav Settings */
@@ -145,11 +147,19 @@ h2{
 
 	#colophon{
 		grid-column: span 5;
+		max-height: fit-content;
+	}
+
+	#colophon:nth-child(8){
+		align-self: end;
 	}
 
 	#quotation:nth-child(6){
-		position: relative;
-		top: var(--size-4);
-		left: var(--size-10);
+		position: sticky;
+		left: 200px
+	}
+
+	#last-item{
+		grid-column: 4/10;
 	}
 }
