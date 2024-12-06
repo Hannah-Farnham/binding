@@ -56,7 +56,7 @@ h1{
 		transform: rotate(0deg); 
 	  	color: var(--black);
 	}
-  }
+}
 
 .rotating-text-2 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
@@ -81,7 +81,7 @@ h1{
 		transform: rotate(0deg); 
 	  	color: var(--black);
 	}
-  }
+}
 
 .rotating-text-3 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
@@ -106,7 +106,7 @@ h1{
 		transform: rotate(0deg); 
 	  	color: var(--black);
 	}
-  }
+}
 
 	/* Nav Overall Squares */
 
@@ -126,18 +126,16 @@ h1{
 	transform: rotate(-5deg);
 	z-index: 3;
 }
-
-	/* Grid Settings */
-
+	
+	/* Grid Styles Heading */
+	
 .heading{
 	display: flex;
 	justify-items: center;
 	grid-row: span 11;
 	margin: 0 auto;
 }
-	
-	/* Grid Styles Heading */
-	
+
 #header-1{
 	background-color: var(--dark-red);
 	transform: rotate(5deg);
@@ -184,15 +182,6 @@ h1{
 	transform: rotate(-5deg);
 }
 
-	/* Grid Styles Body */
-	
-	
-	/* Nav Settings */
-	
-
-	/* Info Settings (Below Header) */
-
-	
 	/* Media Queries */
 
 @media (min-width: 768px) {

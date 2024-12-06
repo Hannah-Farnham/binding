@@ -26,14 +26,6 @@
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
 
-	/* Alternatives 
-
-	"mono45-headline", monospace;
-	"hwt-mardell", sans-serif; 
-	"Caveat", cursive;
-	"nitti-typewriter-cameo", sans-serif;
-
-	*/
 
 	/* Color */
 
@@ -150,133 +142,6 @@ cite{
 	text-align: center;
 	line-height: var(--size-6);
 }
-
-/* typing text animation */
-
-.typing-text{
-	font-family: var(--font-family-6);
-	line-height: 2ch;
-}
-
-			/* 1 */
-
-.typing-text-1{
-	font-family: var(--font-family-6);
-	letter-spacing: -1px;
-	overflow: hidden; 
-	white-space: nowrap; 
-	width: 0;
-	animation: typing-text-1 6s steps(40) 1s forwards;
-  }
-  
-  @keyframes typing-text-1 {
-	from { 
-		width: 0 
-	}
-	to { 
-		width: 100% 
-	}
-  }
-
-			/* 2 */
-
-  .typing-text-2{
-	font-family: var(--font-family-6);
-	letter-spacing: -1px;
-	overflow: hidden; 
-	white-space: nowrap; 
-	width: 0;
-	animation: typing-text-2 6s steps(40) 3s forwards;
-  }
-
-  @keyframes typing-text-2 {
-	from { 
-		width: 0 
-	}
-	to { 
-		width: 100% 
-	}
-  }
-
-			/* 3 */
-
-  .typing-text-3{
-	font-family: var(--font-family-6);
-	letter-spacing: -1px;
-	overflow: hidden; 
-	white-space: nowrap; 
-	width: 0;
-	animation: typing-text-3 6s steps(40) 5s forwards;
-  }
-  
-  @keyframes typing-text-3 {
-	from { 
-		width: 0 
-	}
-	to { 
-		width: 100% 
-	}
-  }
-
-			/* 4 */
-
-  .typing-text-4{
-	font-family: var(--font-family-6);
-	letter-spacing: -1px;
-	overflow: hidden; 
-	white-space: nowrap; 
-	width: 0;
-	animation: typing-text-4 6s steps(40) 7s forwards;
-  }
-  
-  @keyframes typing-text-4 {
-	from { 
-		width: 0 
-	}
-	to { 
-		width: 100% 
-	}
-  }
-
-			/* 5 */
-
-  .typing-text-5{
-	font-family: var(--font-family-6);
-	letter-spacing: -1px;
-	overflow: hidden; 
-	white-space: nowrap; 
-	width: 0;
-	animation: typing-text-5 6s steps(40) 9s forwards;
-  }
-  
-  @keyframes typing-text-5 {
-	from { 
-		width: 0 
-	}
-	to { 
-		width: 100% 
-	}
-  }
-
-			/* 6 */
-
-  .typing-text-6{
-	font-family: var(--font-family-6);
-	letter-spacing: -1px;
-	overflow: hidden; 
-	white-space: nowrap; 
-	width: 0;
-	animation: typing-text-6 6s steps(40) 13s forwards;
-  }
-  
-  @keyframes typing-text-6 {
-	from { 
-		width: 0 
-	}
-	to { 
-		width: 100% 
-	}
-  }
 
 /* Grid Settings */
 
@@ -491,6 +356,133 @@ nav{
 	flex-grow: 1;
 }
 
+/* typing text animation */
+
+.typing-text{
+	font-family: var(--font-family-6);
+	line-height: 2ch;
+}
+
+			/* 1 */
+
+.typing-text-1{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-1 6s steps(40) 1s forwards;
+}
+  
+@keyframes typing-text-1 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+}
+
+			/* 2 */
+
+.typing-text-2{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-2 6s steps(40) 3s forwards;
+}
+
+@keyframes typing-text-2 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+}
+
+			/* 3 */
+
+.typing-text-3{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-3 6s steps(40) 5s forwards;
+  }
+  
+@keyframes typing-text-3 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+}
+
+			/* 4 */
+
+.typing-text-4{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-4 6s steps(40) 7s forwards;
+}
+  
+@keyframes typing-text-4 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+}
+
+			/* 5 */
+
+.typing-text-5{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-5 6s steps(40) 9s forwards;
+}
+
+@keyframes typing-text-5 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+}
+
+			/* 6 */
+
+.typing-text-6{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-6 6s steps(40) 13s forwards;
+}
+
+@keyframes typing-text-6 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+}
+
 	/* Media Queries */
 
 @media (min-width: 768px) {
@@ -587,6 +579,16 @@ nav{
 
 @media (min-width: 1080px) {
 
+	/* Font Setting*/
+	
+	h1{
+		font-size: var(--size-8);
+	}
+
+	h3{
+		font-size: calc(var(--size-1)*1.5);
+	}
+
 	/* Body Grid Setting*/
 
 	body {
@@ -654,14 +656,6 @@ nav{
 	}
 
 	/* Heading Grid Setting*/
-
-	h1{
-		font-size: var(--size-8);
-	}
-
-	h3{
-		font-size: calc(var(--size-1)*1.5);
-	}
 
 	.header-container{
 		padding: var(--size-3);
