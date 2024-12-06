@@ -22,7 +22,7 @@
 	--font-family-2: "Bodoni Moda", serif;
 	--font-family-3: "hwt-mardell", sans-serif; 
 	--font-family-4: "mono45-headline", monospace;
-	--font-family-5: "cofo-sans-mono-variable", sans-serif;
+	--font-family-5: "nitti-typewriter-cameo", sans-serif;
 	--font-weight-regular: 400;
 	--font-weight-bold: 700;
 
@@ -76,13 +76,32 @@ h2{
 	font-weight: var(--font-weight-regular);
 	color: var(--black);
 	font-size: var(--size-2);
-	display: inline;
+	text-transform: uppercase;
+	display: inline-block;
+	white-space: nowrap; 
+	animation: scroll-animation 10s linear infinite;
+	display: flex;
+}
+
+.scroll{
 	background-color: var(--light-pink);
 	padding: var(--size-1);
 	border: 1px var(--black) solid;
-	text-wrap: pretty;
-	text-transform: uppercase;
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+	width: 100%;
 }
+
+/* Keyframes for scrolling */
+@keyframes scroll-animation {
+	0% {
+	  transform: translateX(0%); 
+	}
+	100% {
+	  transform: translateX(-100%); 
+	}
+  }
 
 h3{
 	font-family: var(--font-family-5);
@@ -326,6 +345,7 @@ nav{
 	font-weight: 100;
 	font-size: var(--size-1);
 	color: var(--black);
+	max-width: none;
   }
   
 .line {
@@ -396,6 +416,7 @@ nav{
 		row-gap: var(--size-10);
 		/* margin: 0 auto; */
 		padding: var(--size-2);
+		justify-content: center;
 	}
 
 	.basic{
@@ -407,6 +428,7 @@ nav{
 		grid-column: span 8;
 		border: 1px var(--black) solid;
 		padding: var(--size-3);
+		max-width: 1000px;
 	}
 
 	/* Heading Grid Setting*/

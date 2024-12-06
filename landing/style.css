@@ -5,10 +5,6 @@ h1{
 	transform: rotate(-90deg);
 }
 
-a{
-	font-family: var(--font-family-1);
-}
-
 .design-link{
 	font-family: var(--font-family-4);
 	color: var(--dark-red);
@@ -32,7 +28,36 @@ a{
 }
 
 .Book-title{
-	font-size: var(--size-1);
+	font-weight: 600;
+}
+
+	/* h3 animation */
+
+.rotating-text-1 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+}
+
+.rotating-text-1:hover {
+	transform: rotate(5deg);
+	color: var(--dark-red); 
+}
+
+.rotating-text-2 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+}
+
+.rotating-text-2:hover {
+	transform: rotate(-5deg);
+	color: var(--dark-blue); 
+}
+
+.rotating-text-3 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+}
+
+.rotating-text-3:hover {
+	transform: rotate(5deg);
+	color: var(--dark-yellow); 
 }
 
 	/* Nav Overall Squares */
@@ -192,7 +217,7 @@ a{
 	}
 
 	#landing-body{
-		font-size: var(--size-2);
+		font-size: calc(var(--size-1)*1.3);
 		line-height: var(--size-3);
 	}
 
@@ -205,6 +230,12 @@ a{
 
 	#colophon{
 		grid-column: span 4;
+	}
+
+	#separate-text{
+		display: flex;
+		flex-direction: column; /* Stack children vertically */
+		justify-content: space-between; /* Push text to the bottom */
 	}
 
 		/* Grid Styles Heading */
