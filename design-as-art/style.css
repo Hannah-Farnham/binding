@@ -1,6 +1,13 @@
 
 	/* Font Settings */
 
+.p-highlight{
+	color: var(--dark-cobalt)
+}
+
+h2{
+	background-color: var(--light-yellow);
+}
 	/* Grid Settings */
 	
 	/* Nav Design Squares */
@@ -83,7 +90,6 @@
 	background-color: var(--light-yellow);
 	transform: rotate(-10deg);
 	transform-origin: center;
-	position: sticky;
 	top: 10px;
 }
 
@@ -91,7 +97,6 @@
 	background-color: var(--light-cobalt);
 	transform: rotate(10deg);
 	transform-origin: center;
-	position: sticky;
 	top: 10px;
 }
 
@@ -99,7 +104,6 @@
 	background-color: var(--light-red);
 	transform: rotate(-10deg);
 	transform-origin: center;
-	position: sticky;
 	top: 10px;
 }
 	
