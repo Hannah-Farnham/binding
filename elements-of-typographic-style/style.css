@@ -1,7 +1,11 @@
 	/* Font Settings */
 
 h1{
-	font-size: var(--size-3);
+	font-size: calc(var(--size-3)*1.4);
+}
+
+.small-h1 {
+	font-size: calc(var(--size-3)*1.1);
 }
 
 h2{
@@ -116,8 +120,30 @@ h2{
 	/* Info Settings (Below Header) */
 	
 	/* Media Queries */
+
+@media (min-width: 768px) {
+
+	h1{
+		font-size: var(--size-7);
+	}
+
+	.small-h1 {
+		font-size: var(--size-6);
+	}
+
+}
 	
 @media (min-width: 1080px) {
+
+		/* Font Styles  */
+
+	h1{
+	font-size: var(--size-8);
+	}	
+
+	.small-h1 {
+		font-size: var(--size-7);
+	}
 
 		/* Grid Styles Heading */
 
@@ -137,10 +163,6 @@ h2{
 		transform: rotate(3deg);
 		}
 
-	h1{
-	font-size: var(--size-8);
-	}	
-
 		/* Grid Styles Body */
 
 	#quotation{
@@ -158,35 +180,21 @@ h2{
 	.horizontal{
 		grid-column: span 4;
 	}
-/* 
-	#header-2{
-		transform: rotate(-5deg);
-		position: relative;
-		top: 40px;
-	}
-
-	#header-3{
-		position: relative;
-		top: 200px;
-		left: -680px;
-	}
-
-	#header-4{
-		position: relative;
-		top: 240px;
-		left: -680px;
-		transform: rotate(-5deg);
-	}
-	
-	#header-5{
-		position: relative;
-		top: 400px;
-		left: -1100px;
-		transform: rotate(5deg);
-	} */
 
 	#desktop-only{
 		display: block;
 	}
 	
+}
+
+@media (min-width: 1500px) {
+
+	h1{
+		font-size: var(--size-10);
+	}
+
+	.small-h1 {
+		font-size: var(--size-9);
+	}
+
 }

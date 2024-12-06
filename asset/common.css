@@ -129,6 +129,8 @@ blockquote{
 	flex-direction: column; 
 	justify-content: space-between; 
 	gap: var(--size-1);
+	min-width: 300px;
+	max-width: 400px;
 }
 
 cite{
@@ -487,7 +489,6 @@ nav{
 	h1{
 		font-size: var(--size-7);
 	}
-
 }
 
 @media (min-width: 1080px) {
@@ -573,9 +574,6 @@ nav{
 
 	.heading{
 		grid-column: span 12;
-		/* padding-top:  var(--size-6); */
-		/* display: flex;
-		justify-content: flex-start; */
 	}
 
 	blockquote{

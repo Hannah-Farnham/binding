@@ -70,16 +70,16 @@ h1{
 
 @keyframes rotate-and-change-2 {
 	0% {
-		transform: rotate(0deg); /* Initial rotation */
-		color: var(--black); /* Initial color */
+		transform: rotate(0deg); 
+		color: var(--black); 
 	}
 	50% {
-		transform: rotate(-5deg); /* 180-degree rotation */
-		color: var(--dark-blue); /* Change color to blue */
+		transform: rotate(-5deg); 
+		color: var(--dark-blue); 
 	}
 	100% {
-		transform: rotate(0deg); /* Final 360-degree rotation */
-	  	color: var(--black); /* Change color to red */
+		transform: rotate(0deg); 
+	  	color: var(--black);
 	}
   }
 
@@ -95,16 +95,16 @@ h1{
 
 @keyframes rotate-and-change-3 {
 	0% {
-		transform: rotate(0deg); /* Initial rotation */
-		color: var(--black); /* Initial color */
+		transform: rotate(0deg);
+		color: var(--black); 
 	}
 	50% {
-		transform: rotate(5deg); /* 180-degree rotation */
-		color: var(--dark-yellow); /* Change color to blue */
+		transform: rotate(5deg);
+		color: var(--dark-yellow); 
 	}
 	100% {
-		transform: rotate(0deg); /* Final 360-degree rotation */
-	  	color: var(--black); /* Change color to red */
+		transform: rotate(0deg); 
+	  	color: var(--black);
 	}
   }
 
@@ -132,7 +132,7 @@ h1{
 .heading{
 	display: flex;
 	justify-items: center;
-	grid-row: span 25;
+	grid-row: span 11;
 	margin: 0 auto;
 }
 	
