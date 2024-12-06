@@ -4,13 +4,132 @@ h1 {
 	font-size: var(--size-4);
 }
 
-#h2-pink {
+h2{
 	background-color: var(--light-pink);
 }
 
-h2:nth-child(2){
+.h2-background-yellow{
 	background-color: var(--light-blue);
 }
+
+.h2-background-orange{
+	background-color: var(--light-orange);
+}
+
+#p-highlight-blue{
+	color: var(--dark-blue)
+}
+
+#p-highlight-pink{
+	color: var(--dark-pink)
+}
+
+#p-highlight-orange{
+	color: var(--dark-orange)
+}
+
+	/* h3 animation */
+
+.rotating-text-1 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-1 4s ease 1 1s;
+}
+
+.rotating-text-1:hover {
+	transform: rotate(5deg);
+	color: var(--dark-orange); 
+}
+
+@keyframes rotate-and-change-1 {
+	0% {
+		transform: rotate(0deg);
+		color: var(--black);
+	}
+	50% {
+		transform: rotate(5deg); 
+		color: var(--dark-orange); 
+	}
+	100% {
+		transform: rotate(0deg); 
+	  	color: var(--black);
+	}
+  }
+
+.rotating-text-2 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-2 4s ease 1 2s;
+}
+
+.rotating-text-2:hover {
+	transform: rotate(-5deg);
+	color: var(--dark-pink); 
+}
+
+@keyframes rotate-and-change-2 {
+	0% {
+		transform: rotate(0deg); 
+		color: var(--black); 
+	}
+	50% {
+		transform: rotate(-5deg); 
+		color: var(--dark-pink); 
+	}
+	100% {
+		transform: rotate(0deg); 
+	  	color: var(--black);
+	}
+  }
+
+.rotating-text-3 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-3 4s ease 1 3s;
+}
+
+.rotating-text-3:hover {
+	transform: rotate(5deg);
+	color: var(--dark-blue); 
+}
+
+@keyframes rotate-and-change-3 {
+	0% {
+		transform: rotate(0deg);
+		color: var(--black); 
+	}
+	50% {
+		transform: rotate(5deg);
+		color: var(--dark-blue); 
+	}
+	100% {
+		transform: rotate(0deg); 
+	  	color: var(--black);
+	}
+  }
+
+.rotating-text-4 {
+	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-4 4s ease 1 3s;
+}
+
+.rotating-text-4:hover {
+	transform: rotate(5deg);
+	color: var(--dark-orange); 
+}
+
+@keyframes rotate-and-change-4 {
+	0% {
+		transform: rotate(0deg);
+		color: var(--black); 
+	}
+	50% {
+		transform: rotate(5deg);
+		color: var(--dark-orange); 
+	}
+	100% {
+		transform: rotate(0deg); 
+	  	color: var(--black);
+	}
+  }
+
 
 	/* Nav Color Squares */
 
@@ -86,9 +205,9 @@ h2:nth-child(2){
 
 	/* Grid Styles Body */
 	
-#quotation:nth-child(6){
-	background-color: var(--light-orange);
-	transform: rotate(-10deg);
+#quotation:nth-child(4){
+	background-color: var(--light-blue);
+	transform: rotate(5deg);
 	transform-origin: center;
 	top: 10px;
 }
@@ -97,13 +216,98 @@ h2:nth-child(2){
 	background-color: var(--light-pink);
 	transform: rotate(-15deg);
 	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+#quotation:nth-child(7):hover{
+	transform: scale(1.5);
+}
+
+	/* Example Cards */
+
+.IOC-example{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .IOC{
-	font-family: "EB Garamond", serif;;
+	text-align: center;
+	color: white;
+	font-size: var(--size-2);
 }
 
+.IOC:hover{
+	color: var(--black);
+}
 
+#IOC-text-style-1{
+	font-family: "EB Garamond", serif;
+}
+
+#IOC-text-style-2{
+	font-family: var(--font-family-1)
+}
+
+#IOC-1{
+	background-color: var(--black);
+	border-radius: 100px;
+	transform: rotate(5deg);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+#IOC-1:hover{
+	background: linear-gradient(
+		45deg, 
+		var(--dark-red), var(--dark-blue), var(--dark-yellow));
+	transform: scale(1.05);
+}
+
+#IOC-2{
+	background-color: var(--black);
+	border-radius: 100px;
+	transform: rotate(-5deg);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+#IOC-2:hover{
+	background: linear-gradient(
+		45deg, 
+		var(--light-red), var(--dark-cobalt), var(--light-green));
+	transform: scale(1.05);
+}
+
+#IOC-3{
+	background-color: var(--black);
+	border-radius: 100px;
+	transform: rotate(5deg);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+#IOC-3:hover{
+	background: linear-gradient(
+		-45deg, 
+		var(--dark-green), var(--dark-pink), var(--dark-yellow));
+	transform: scale(1.05);
+}
+
+#IOC-4{
+	background-color: var(--black);
+	border-radius: 100px;
+	transform: rotate(-5deg);
+	transform-origin: center;
+	transition: transform 0.3s ease;
+}
+
+#IOC-4:hover{
+	background: linear-gradient(
+		45deg, 
+		var(--light-cobalt), var(--dark-pink), var(--light-yellow));
+	transform: scale(1.05);
+}
 		
 	/* Nav Settings */
 
@@ -158,38 +362,24 @@ h2:nth-child(2){
 	
 	.body-text{
 		justify-self: end;
+		grid-column: span 7;
+	}
+
+	#colophon{
+		grid-column: span 5;
+		max-height: fit-content;
+	}
+
+	#colophon:nth-child(8){
+		align-self: end;
 	}
 
 	.horizontal{
 		grid-column: span 4;
 	}
 
-	#IOC-1{
-		grid-column: span 3;
-		background-color: var(--light-blue);
-		transform: rotate(15deg);
-		transform-origin: center;
-	}
-	
-	#IOC-2{
-		grid-column: span 3;
-		background-color: var(--light-pink);
-		transform: rotate(-15deg);
-		transform-origin: center;
-	}
-	
-	#IOC-3{
-		grid-column: span 3;
-		background-color: var(--light-orange);
-		transform: rotate(15deg);
-		transform-origin: center;
-	}
-	
-	#IOC-4{
-		grid-column: span 3;
-		background-color: var(--light-blue);
-		transform: rotate(-15deg);
-		transform-origin: center;
+	#serif-item{
+		grid-column: 4/12;
 	}
 }
 

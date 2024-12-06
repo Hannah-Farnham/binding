@@ -209,10 +209,6 @@ h2{
 		grid-column: span 4;
 	}
 
-	#none{
-		display: none;
-	}
-
 	#colophon{
 		grid-column: span 5;
 		max-height: fit-content;
