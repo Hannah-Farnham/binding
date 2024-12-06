@@ -40,7 +40,7 @@ h2{
 
 .rotating-text-1 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
-	animation: rotate-and-change-1 4s ease 1 1s;
+	animation: rotate-and-change-1 4s ease 1 2s;
 }
 
 .rotating-text-1:hover {
@@ -65,7 +65,7 @@ h2{
 
 .rotating-text-2 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
-	animation: rotate-and-change-2 4s ease 1 2s;
+	animation: rotate-and-change-2 4s ease 1 6s;
 }
 
 .rotating-text-2:hover {
@@ -90,7 +90,7 @@ h2{
 
 .rotating-text-3 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
-	animation: rotate-and-change-3 4s ease 1 3s;
+	animation: rotate-and-change-3 4s ease 1 10s;
 }
 
 .rotating-text-3:hover {
@@ -124,9 +124,6 @@ h2{
 	background-color: var(--light-yellow);
 	transform: rotate(5deg);
 }
-
-	/* Grid Settings */
-
 	
 	/* Grid Styles Heading */
 
@@ -180,7 +177,7 @@ h2{
 }
 
 /* Grid Styles Body */
-	
+
 #quotation:nth-child(4){
 	background-color: var(--light-green);
 	transform: rotate(-10deg);
@@ -206,10 +203,6 @@ h2{
 #quotation:hover{
 	transform: scale(1.3);
 }
-
-	/* Nav Settings */
-	
-	/* Info Settings (Below Header) */
 	
 	/* Media Queries */
 

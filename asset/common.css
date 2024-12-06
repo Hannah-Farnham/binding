@@ -186,7 +186,7 @@ cite{
 	overflow: hidden; 
 	white-space: nowrap; 
 	width: 0;
-	animation: typing-text-2 6s steps(40) 2s forwards;
+	animation: typing-text-2 6s steps(40) 3s forwards;
   }
 
   @keyframes typing-text-2 {
@@ -206,7 +206,7 @@ cite{
 	overflow: hidden; 
 	white-space: nowrap; 
 	width: 0;
-	animation: typing-text-3 6s steps(40) 3s forwards;
+	animation: typing-text-3 6s steps(40) 5s forwards;
   }
   
   @keyframes typing-text-3 {
@@ -226,7 +226,7 @@ cite{
 	overflow: hidden; 
 	white-space: nowrap; 
 	width: 0;
-	animation: typing-text-4 6s steps(40) 4s forwards;
+	animation: typing-text-4 6s steps(40) 7s forwards;
   }
   
   @keyframes typing-text-4 {
@@ -246,7 +246,7 @@ cite{
 	overflow: hidden; 
 	white-space: nowrap; 
 	width: 0;
-	animation: typing-text-5 6s steps(40) 5s forwards;
+	animation: typing-text-5 6s steps(40) 9s forwards;
   }
   
   @keyframes typing-text-5 {
@@ -266,7 +266,7 @@ cite{
 	overflow: hidden; 
 	white-space: nowrap; 
 	width: 0;
-	animation: typing-text-6 6s steps(40) 6s forwards;
+	animation: typing-text-6 6s steps(40) 13s forwards;
   }
   
   @keyframes typing-text-6 {
