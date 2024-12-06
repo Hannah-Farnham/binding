@@ -77,38 +77,20 @@ h2{
 	color: var(--black);
 	font-size: var(--size-2);
 	text-transform: uppercase;
-	display: inline-block;
-	white-space: nowrap; 
-	animation: scroll-animation 10s linear infinite;
 	display: flex;
-}
-
-.scroll{
 	background-color: var(--light-pink);
 	padding: var(--size-1);
 	border: 1px var(--black) solid;
-	overflow: hidden;
-	position: relative;
-	white-space: nowrap;
-	width: 100%;
+	display: inline-block;
 }
 
-/* Keyframes for scrolling */
-@keyframes scroll-animation {
-	0% {
-	  transform: translateX(0%); 
-	}
-	100% {
-	  transform: translateX(-100%); 
-	}
-  }
 
 h3{
 	font-family: var(--font-family-5);
 	font-weight: var(--font-weight-bold);
 	color: var(--black);
 	font-size: var(--size-2);
-	line-height: 2ch;
+	line-height: 2.2ch;
 	text-wrap: pretty;
 }
 

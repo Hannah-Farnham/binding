@@ -35,6 +35,7 @@ h1{
 
 .rotating-text-1 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-1 4s ease 1 1s;
 }
 
 .rotating-text-1:hover {
@@ -42,8 +43,24 @@ h1{
 	color: var(--dark-red); 
 }
 
+@keyframes rotate-and-change-1 {
+	0% {
+		transform: rotate(0deg);
+		color: var(--black);
+	}
+	50% {
+		transform: rotate(5deg); 
+		color: var(--dark-red); 
+	}
+	100% {
+		transform: rotate(0deg); 
+	  	color: var(--black);
+	}
+  }
+
 .rotating-text-2 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-2 4s ease 1 2s;
 }
 
 .rotating-text-2:hover {
@@ -51,14 +68,45 @@ h1{
 	color: var(--dark-blue); 
 }
 
+@keyframes rotate-and-change-2 {
+	0% {
+		transform: rotate(0deg); /* Initial rotation */
+		color: var(--black); /* Initial color */
+	}
+	50% {
+		transform: rotate(-5deg); /* 180-degree rotation */
+		color: var(--dark-blue); /* Change color to blue */
+	}
+	100% {
+		transform: rotate(0deg); /* Final 360-degree rotation */
+	  	color: var(--black); /* Change color to red */
+	}
+  }
+
 .rotating-text-3 {
 	transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; 
+	animation: rotate-and-change-3 4s ease 1 3s;
 }
 
 .rotating-text-3:hover {
 	transform: rotate(5deg);
 	color: var(--dark-yellow); 
 }
+
+@keyframes rotate-and-change-3 {
+	0% {
+		transform: rotate(0deg); /* Initial rotation */
+		color: var(--black); /* Initial color */
+	}
+	50% {
+		transform: rotate(5deg); /* 180-degree rotation */
+		color: var(--dark-yellow); /* Change color to blue */
+	}
+	100% {
+		transform: rotate(0deg); /* Final 360-degree rotation */
+	  	color: var(--black); /* Change color to red */
+	}
+  }
 
 	/* Nav Overall Squares */
 
