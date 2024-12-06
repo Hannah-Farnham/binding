@@ -158,7 +158,7 @@ cite{
 	line-height: 2ch;
 }
 
-  			/* 1 */
+			/* 1 */
 
 .typing-text-1{
 	font-family: var(--font-family-6);
@@ -178,7 +178,7 @@ cite{
 	}
   }
 
-  			/* 2 */
+			/* 2 */
 
   .typing-text-2{
 	font-family: var(--font-family-6);
@@ -198,7 +198,7 @@ cite{
 	}
   }
 
-  			/* 3 */
+			/* 3 */
 
   .typing-text-3{
 	font-family: var(--font-family-6);
@@ -218,7 +218,7 @@ cite{
 	}
   }
 
-  			/* 4 */
+			/* 4 */
 
   .typing-text-4{
 	font-family: var(--font-family-6);
@@ -238,7 +238,7 @@ cite{
 	}
   }
 
-  			/* 5 */
+			/* 5 */
 
   .typing-text-5{
 	font-family: var(--font-family-6);
@@ -258,7 +258,7 @@ cite{
 	}
   }
 
-  			/* 6 */
+			/* 6 */
 
   .typing-text-6{
 	font-family: var(--font-family-6);
@@ -364,12 +364,12 @@ nav{
 
 .square-container{
 	width: var(--size-5);
-	height: var(--size-6);
+	height: var(--size-4);
 }
 
 .square {
-	width: var(--size-4);
-	height: var(--size-4);
+	width: var(--size-3);
+	height: var(--size-3);
 }
 
 	/* Overall Squares */
@@ -378,8 +378,8 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	position: relative;
-	top: 16px;
-	left: 16px;
+	top: 12px;
+	left: 20px;
 	z-index: 1;
 }
 
@@ -387,8 +387,8 @@ nav{
 	background-color: var(--white);
 	border: 1px var(--black) solid;
 	position: relative;
-	bottom: 40px;
-	left: 8px;
+	bottom: 26px;
+	left: 14px;
 	z-index: 2;
 }
 
@@ -396,9 +396,10 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	text-align: center;
-	line-height: var(--size-4);
+	line-height: var(--size-3);
 	position: relative;
-	bottom: 96px;
+	bottom: 64px;
+	left: 8px;
 	z-index: 3;
 }
 
@@ -408,7 +409,8 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	position: relative;
-	bottom: 48px;
+	bottom: 32px;
+	left: 8px;
 	z-index: 3;
 }
 
@@ -416,8 +418,8 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	position: relative;
-	top: 16px;
-	left: 16px;
+	top: 12px;
+	left: 20px;
 	z-index: 1;
 }
 
@@ -428,7 +430,7 @@ nav{
 	background-color: var(--light-grey);
 	z-index: 2;
 	position: relative;
-	bottom: 48px;
+	bottom: 32px;
 	z-index: 3;
 }
 
@@ -436,8 +438,8 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--light-white);
 	position: relative;
-	left: 16px;
-	top: 16px;
+	top: 12px;
+	left: 12px;
 	z-index: 1;
 }
 
@@ -447,9 +449,9 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	text-align: center;
-	line-height: var(--size-4);
+	line-height: var(--size-3);
 	position: relative;
-	bottom: 48px;
+	bottom: 32px;
 	z-index: 3;
 }
 
@@ -457,8 +459,8 @@ nav{
 	border: 1px var(--black) solid;
 	background-color: var(--white);
 	position: relative;
-	top: 16px;
-	left: 16px;
+	top: 12px;
+	left: 12px;
 	z-index: 1;
 }
 
@@ -495,6 +497,91 @@ nav{
 
 	h1{
 		font-size: var(--size-7);
+	}
+
+	/* Nav Visuals */
+
+		/* Square General */
+
+	.square-container{
+		width: var(--size-5);
+		height: var(--size-6);
+	}
+
+	.square {
+		width: var(--size-4);
+		height: var(--size-4);
+	}
+
+		/* Overall Squares */
+
+	#square-1 {
+		position: relative;
+		top: 16px;
+		left: 16px;
+		z-index: 1;
+	}
+
+	#square-2 {
+		position: relative;
+		bottom: 40px;
+		left: 8px;
+		z-index: 2;
+	}
+
+	#square-3 {
+		line-height: var(--size-4);
+		position: relative;
+		bottom: 96px;
+		left: 0px;
+		z-index: 3;
+	}
+
+		/* Design Squares */
+
+	#square-4 {
+		position: relative;
+		bottom: 48px;
+		left: 0px;
+		z-index: 3;
+	}
+
+	#square-7 {
+		position: relative;
+		top: 16px;
+		left: 16px;
+		z-index: 1;
+	}
+
+		/* Color Squares */
+
+	#square-5 {
+		position: relative;
+		bottom: 48px;
+		z-index: 3;
+}
+
+	#square-8 {
+		position: relative;
+		left: 16px;
+		top: 16px;
+		z-index: 1;
+	}
+
+	/* Type Squares */
+
+	#square-6 {
+		position: relative;
+		line-height: var(--size-4);
+		bottom: 48px;
+		z-index: 3;
+	}
+
+	#square-9 {
+		position: relative;
+		top: 16px;
+		left: 16px;
+		z-index: 1;
 	}
 }
 

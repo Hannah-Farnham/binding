@@ -134,23 +134,13 @@ h2{
 	/* Nav Color Squares */
 
 #square-5 {
-	border: 1px var(--black) solid;
 	background-color: var(--dark-blue);
-	z-index: 2;
-	position: relative;
-	bottom: 48px;
 	transform: rotate(-5deg);
-	z-index: 3;
 }
 
 #square-8 {
-	border: 1px var(--black) solid;
 	background-color: var(--light-pink);
-	position: relative;
-	left: 16px;
-	top: 16px;
 	transform: rotate(5deg);
-	z-index: 1;
 }
 
 	/* Grid Settings */
