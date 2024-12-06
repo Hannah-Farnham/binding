@@ -131,6 +131,7 @@ blockquote{
 	gap: var(--size-1);
 	min-width: 300px;
 	max-width: 400px;
+	align-self: end;
 }
 
 cite{
@@ -138,7 +139,6 @@ cite{
 	font-size: var(--size-1);
 	font-weight: 400;
 	color: var(--black);
-	text-align: center;
 	display: flex;
 	justify-content: bottom;
 }
@@ -306,10 +306,6 @@ article{
 	padding: var(--size-2);
 }
 
-.empty{
-	height: var(--size-4);
-}
-
 /* Nav Settings */
 
 nav{
@@ -345,6 +341,7 @@ nav{
 	place-items: center;
 	position: relative;
 	overflow: hidden;
+	transition: opacity 0.5s ease, background-color 0.5s ease; 
 }
 
 .nav-items:hover{
@@ -478,7 +475,7 @@ nav{
   }
   
 .line {
-	border: .75px var(--black) solid;
+	border: 1px var(--black) solid;
 	flex-grow: 1;
 }
 

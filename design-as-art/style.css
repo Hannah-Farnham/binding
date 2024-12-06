@@ -1,6 +1,14 @@
 
 	/* Font Settings */
 
+h2{
+	background-color: var(--light-yellow);
+}
+
+.h2-background-blue{
+	background-color: var(--light-cobalt);
+}
+
 #p-highlight-blue{
 	color: var(--dark-cobalt)
 
@@ -12,14 +20,6 @@
 
 #p-highlight-yellow{
 	color: var(--dark-yellow)
-}
-
-h2{
-	background-color: var(--light-yellow);
-}
-
-.h2-background-blue{
-	background-color: var(--light-cobalt);
 }
 
 	/* h3 animation */
@@ -178,9 +178,8 @@ h2{
 
 #quotation:nth-child(6){
 	background-color: var(--light-red);
-	transform: rotate(8deg);
+	transform: rotate(-8deg);
 	transform-origin: center;
-	top: 10px;
 }
 
 	
@@ -225,8 +224,8 @@ h2{
 
 	#quotation:nth-child(6){
 		position: relative;
-		left: 280px;
-		top: 50px;
+		left: 150px;
+		top: 20px;
 	}
 
 	#last-item{
