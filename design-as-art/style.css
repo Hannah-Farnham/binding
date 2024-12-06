@@ -115,17 +115,6 @@
 
 		/* Grid Styles Heading */
 
-	#header-1{
-		transform: rotate(3deg);
-	}
-		
-	#header-2{
-		transform: rotate(-3deg);
-	}
-		
-	#header-3{
-		transform: rotate(3deg);
-	}
 
 		/* Grid Styles Body */
 
@@ -147,5 +136,9 @@
 
 	#none{
 		display: none;
+	}
+
+	#colophon{
+		grid-column: span 4;
 	}
 }
