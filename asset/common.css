@@ -154,12 +154,120 @@ cite{
 
 .typing-text{
 	font-family: var(--font-family-6);
+}
+
+  			/* 1 */
+
+.typing-text-1{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
 	overflow: hidden; 
 	white-space: nowrap; 
-	animation: typing-text 6s steps(40) 1s forwards;
+	width: 0;
+	animation: typing-text-1 6s steps(40) 1s forwards;
   }
   
-  @keyframes typing-text {
+  @keyframes typing-text-1 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+  }
+
+  			/* 2 */
+
+  .typing-text-2{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-2 6s steps(40) 2s forwards;
+  }
+
+  @keyframes typing-text-2 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+  }
+
+  			/* 3 */
+
+  .typing-text-3{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-3 6s steps(40) 3s forwards;
+  }
+  
+  @keyframes typing-text-3 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+  }
+
+  			/* 4 */
+
+  .typing-text-4{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-4 6s steps(40) 4s forwards;
+  }
+  
+  @keyframes typing-text-4 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+  }
+
+  			/* 5 */
+
+  .typing-text-5{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-5 6s steps(40) 5s forwards;
+  }
+  
+  @keyframes typing-text-5 {
+	from { 
+		width: 0 
+	}
+	to { 
+		width: 100% 
+	}
+  }
+
+  			/* 6 */
+
+  .typing-text-6{
+	font-family: var(--font-family-6);
+	letter-spacing: -1px;
+	overflow: hidden; 
+	white-space: nowrap; 
+	width: 0;
+	animation: typing-text-6 6s steps(40) 6s forwards;
+  }
+  
+  @keyframes typing-text-6 {
 	from { 
 		width: 0 
 	}

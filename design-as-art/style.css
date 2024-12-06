@@ -1,12 +1,25 @@
 
 	/* Font Settings */
 
-.p-highlight{
+#p-highlight-blue{
 	color: var(--dark-cobalt)
+
+}
+
+#p-highlight-red{
+	color: var(--dark-red)
+}
+
+#p-highlight-yellow{
+	color: var(--dark-yellow)
 }
 
 h2{
 	background-color: var(--light-yellow);
+}
+
+.h2-background-blue{
+	background-color: var(--light-cobalt);
 }
 	/* Grid Settings */
 	
@@ -73,38 +86,25 @@ h2{
 
 	/* Grid Styles Body */
 	
-#quotation:nth-child(6){
+#quotation:nth-child(4){
 	background-color: var(--light-yellow);
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
 }
 
-#quotation:nth-child(7){
-	background-color: var(--light-red);
+#quotation:nth-child(5){
+	background-color: var(--light-cobalt);
 	transform: rotate(15deg);
 	transform-origin: center;
 }
 
-#quotation:nth-child(14){
-	background-color: var(--light-yellow);
-	transform: rotate(-10deg);
-	transform-origin: center;
-	top: 10px;
-}
-
-#quotation:nth-child(15){
-	background-color: var(--light-cobalt);
-	transform: rotate(10deg);
-	transform-origin: center;
-	top: 10px;
-}
-
-#quotation:nth-child(16){
+#quotation:nth-child(6){
 	background-color: var(--light-red);
-	transform: rotate(-10deg);
+	transform: rotate(-15deg);
 	transform-origin: center;
 	top: 10px;
+	max-width: 400px;
 }
 	
 	/* Nav Settings */
@@ -132,6 +132,7 @@ h2{
 
 	.body-text{
 		justify-self: end;
+		grid-column: span 7;
 	}
 
 	.horizontal{
@@ -143,6 +144,12 @@ h2{
 	}
 
 	#colophon{
-		grid-column: span 4;
+		grid-column: span 5;
+	}
+
+	#quotation:nth-child(6){
+		position: relative;
+		top: var(--size-4);
+		left: var(--size-10);
 	}
 }
