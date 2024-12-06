@@ -186,7 +186,6 @@ h2{
 	transform: rotate(-10deg);
 	transform-origin: center;
 	top: 10px;
-	grid-column: 6/12;
 }
 
 #quotation:nth-child(8){
@@ -257,6 +256,10 @@ h2{
 
 	#quotation{
 		grid-column: span 4;
+	}
+
+	#quotation:nth-child(4){
+		grid-column: 6/12;
 	}
 	
 	.basic:nth-child(12){
