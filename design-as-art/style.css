@@ -171,13 +171,6 @@ h2{
 	transition: transform 0.5s ease;
 }
 
-#quotation:nth-child(5){
-	background-color: var(--light-cobalt);
-	transform: rotate(15deg);
-	transform-origin: center;
-	transition: transform 0.5s ease;
-}
-
 #quotation:nth-child(6){
 	background-color: var(--light-red);
 	transform: rotate(-8deg);
@@ -188,7 +181,6 @@ h2{
 #quotation:hover{
 	transform: rotate(20deg);
 }
-
 	
 	/* Media Queries */
 	
@@ -227,11 +219,19 @@ h2{
 
 	#quotation:nth-child(6){
 		position: relative;
-		left: 150px;
+		left: 120px;
 		top: 20px;
+	}
+
+	#quotation:nth-child(4){
+		grid-column: 1/6;
 	}
 
 	#last-item{
 		grid-column: 4/10;
+	}
+
+	#anyone{
+		grid-column: 6/14;
 	}
 }

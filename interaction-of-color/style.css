@@ -295,13 +295,7 @@ h2{
 		var(--light-cobalt), var(--dark-pink), var(--light-yellow));
 	transform: scale(1.05);
 }
-		
-	/* Nav Settings */
 
-
-	/* Info Settings (Below Header) */
-
-	
 	/* Media Queries */
 
 @media (min-width: 768px) {
@@ -367,8 +361,15 @@ h2{
 	#quotation:nth-child(4){
 		grid-column: span 5;
 	}
-}
 
+	#serif-item{
+		grid-column: span 9;
+	}
+
+	.IOC-example{
+		grid-column: span 3;
+	}
+}
 
 @media (min-width: 1500px) {
 
